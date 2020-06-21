@@ -12,7 +12,7 @@ namespace tawbah
     {
         //ج1
         string line = "";
-
+        
         public Form1()
         {
             InitializeComponent();
