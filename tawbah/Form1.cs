@@ -49,7 +49,7 @@ namespace tawbah
             {
             }
 
-            //التحقق من وجود الملف LinqBridge.dll
+            //LinqBridge.dll التحقق من وجود الملف 
             if (File.Exists("LinqBridge.dll"))
             {
             }
@@ -360,9 +360,6 @@ namespace tawbah
             Form hawlaform = new Form3();
             hawlaform.ShowDialog();
 
-            //غلق نافذة اصبر
-
-
         }
 
         private void mawqi_MouseEnter(object sender, EventArgs e)
@@ -427,8 +424,6 @@ namespace tawbah
                 }
 
             }
-
-
 
 
         }
