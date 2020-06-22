@@ -13,3 +13,4 @@ C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.csproj.CopyComplete
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\Atawbah.exe
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\Atawbah.pdb
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.Form5.resources
+C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\Atawbah.exe.config

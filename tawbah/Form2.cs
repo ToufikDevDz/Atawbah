@@ -22,15 +22,13 @@ namespace tawbah
             //الخروج من البرنامج
             Application.Exit();
         }
-
-        private void khorodj_MouseLeave(object sender, EventArgs e)
-        {
-            khorodj.BackgroundImage = Properties.Resources.khorodj;
-        }
-
         private void khorodj_MouseEnter(object sender, EventArgs e)
         {
             khorodj.BackgroundImage = Properties.Resources.lightkhorodj;
+        }
+        private void khorodj_MouseLeave(object sender, EventArgs e)
+        {
+            khorodj.BackgroundImage = Properties.Resources.khorodj;
         }
 
     }
