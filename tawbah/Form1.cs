@@ -10,9 +10,6 @@ namespace tawbah
 {
     public partial class Form1 : Form
     {
-        //ج1
-        string line = "";
-
         public Form1()
         {
             InitializeComponent();
@@ -21,24 +18,30 @@ namespace tawbah
             this.KeyPreview = true;
         }
 
+        //hosts موقع الملف 
+        string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
+
         //إذا حدث خطأ أثناء عملية التنفيذ
         public void khataafitanfid() 
         {
+            //إظهار أزرار النافذة، وتنشيط زر حجب المواقع بإخفاء الزر الذي فوقه، وإخفاء الصورة المتحركة للتقدم
             this.ControlBox = true;
             hajbdisabled.Visible = false;
             busy.Visible = false;
 
+               //لمنع ظهور رسالة الخطأ عند تعذر الإتصال بالخادم
                try
                {
                    System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
                }
-               catch { }
+               catch {}
 
         }
 
         //بعد انتهاء عملية التنفيذ
         public void intihaa()
         {
+            //إظهار أزرار النافذة، تنشيط زر حجب المواقع، وإخفاء الصورة المتحركة للتقدم
             this.ControlBox = true;
             hajbdisabled.Visible = false;
             busy.Visible = false;
@@ -66,20 +69,17 @@ namespace tawbah
                  }
              }
 
+             //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
              catch { }
 
              //LinqBridge.dll التحقق من وجود الملف 
-             if (File.Exists("LinqBridge.dll"))
-             {
-             }
-
-             else
+             if (!File.Exists("LinqBridge.dll"))
              {
                  MessageBox.Show("ينقص الملف LinqBridge.dll، قم بإعادة تحميل البرنامج من موقعه الرسمي.", "حدث خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
                  Application.Exit();
              }
 
-             //آخر الأخبار - مع حذف رسالة الخطأ عند إنقطاع الإتصال بالأنترنت
+             //آخر الأخبار
              try
              {
                  WebClient web = new WebClient();
@@ -91,7 +91,8 @@ namespace tawbah
                 }
              }
 
-             catch { }
+            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
+            catch { }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -102,7 +103,7 @@ namespace tawbah
                 e.Handled = true;
             }
 
-            //Ctrl + L حدث خطأ؟ استعادة الحالة الأصلية للملف بالضغط على الأزرار
+            //Ctrl + L حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية بالضغط على الأزرار
             if (e.Control && e.KeyCode == Keys.L)
             {
                 if (!backgroundWorker1.IsBusy)
@@ -147,7 +148,7 @@ namespace tawbah
             btnhajb.Refresh();
             btnhajb.BackgroundImage = Properties.Resources.lighthajb;
 
-            //عدم التنفيذ إذا انتهت العملية
+            //عدم التنفيذ إذا تمت العملية
             var tma = Convert.ToInt32(tammaawla.Text);
             
             if (tma == 1)
@@ -160,17 +161,13 @@ namespace tawbah
             if (tma == 0)
             {
                 //التنفيذ
-                if (backgroundWorker1.IsBusy)
-                {
-                }
-              
-                else
+                if (!backgroundWorker1.IsBusy)
                 {
                     this.ControlBox = false;
                     hajbdisabled.Visible = true;
                     busy.Visible = true;
                     backgroundWorker1.RunWorkerAsync();
-               }
+                }
             }
         }
 
@@ -195,20 +192,17 @@ namespace tawbah
         {
 
            //التحقق من وجود الملف
-           string pathhst = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
-           if (!File.Exists(pathhst))
+           if (!File.Exists(pathhosts))
            {
-              //إنشاء الملف إذا لم يكن موجود
+              //إنشاء الملف إذا لم يكن موجودا
               try
               {
-                  using (StreamWriter w = File.AppendText(pathhst))
-                    {
-                    }
-
-                }
+                  using (StreamWriter w = File.AppendText(pathhosts));               
+              }
 
               catch (Exception ex)
               {
+                  //إذا حدث خطأ، تتوقف العملية وتظهر رسالة الخطأ
                   khataafitanfid();
                   MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                   return;
@@ -218,12 +212,11 @@ namespace tawbah
            }
 
            starthajb:
-           //إلغاء السمة للقراءة فقط
-           FileInfo hostsnfo = new FileInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"));
+           //إلغاء السمة للقراءة فقط والسمات الأخرى
+           FileInfo hostsnfo = new FileInfo(pathhosts);
            try
            {
-               hostsnfo.IsReadOnly = false;
-               File.SetAttributes(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"), FileAttributes.Normal);
+               File.SetAttributes(pathhosts, FileAttributes.Normal);
            }
 
            catch (Exception ex)
@@ -233,15 +226,14 @@ namespace tawbah
                return;
            }
 
-           //hosts حذف المواقع التي أضافتها الإصدارات القديمة للبرنامج إلى الملف 
-           //hosts حذف المواقع التي أضافها البرنامج إلى الملف
-           //twbh حذف السطور التي تحتوي على كلمة
-           try
-           {
+            //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+            //(twbh حذف السطور التي تحتوي على كلمة)
+            try
+            {
                string search_text = "twbh";
                string old;
                string n = "";
-               StreamReader sr = File.OpenText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"));
+               StreamReader sr = File.OpenText(pathhosts);
                
                while ((old = sr.ReadLine()) != null)
                {
@@ -251,7 +243,7 @@ namespace tawbah
                    }
                }
                sr.Close();
-               File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"), n);
+               File.WriteAllText(pathhosts, n);
            }
 
            catch (Exception ex)
@@ -264,7 +256,7 @@ namespace tawbah
            //hosts إضافة السطور إلى الملف 
            try
            {
-               using (StreamWriter sw = File.AppendText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts")))
+               using (StreamWriter sw = File.AppendText(pathhosts))
                {
                    sw.WriteLine(Properties.Resources.qaimatalmawaqi);
                }
@@ -278,11 +270,11 @@ namespace tawbah
            }
 
            //حذف السطور المكررة
-           string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
+         
            try
            {
-               string[] lines = File.ReadAllLines(path);
-               File.WriteAllLines(path, lines.Distinct().ToArray());
+               string[] lines = File.ReadAllLines(pathhosts);
+               File.WriteAllLines(pathhosts, lines.Distinct().ToArray());
            }
 
            catch (Exception ex)
@@ -333,10 +325,9 @@ namespace tawbah
         {
             try
             {
-                FileInfo hostsnfo = new FileInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"));
-                //إلغاء السمة للقراءة فقط
-                hostsnfo.IsReadOnly = false;
-                File.SetAttributes(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"), FileAttributes.Normal);
+                FileInfo hostsnfo = new FileInfo(pathhosts);
+                //إلغاء السمة للقراءة فقط والسمات الأخرى
+                File.SetAttributes(pathhosts, FileAttributes.Normal);
             }
            
             catch (Exception ex)
@@ -354,7 +345,7 @@ namespace tawbah
                 string search_text = "twbh";
                 string old;
                 string n = "";
-                StreamReader sr = File.OpenText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"));
+                StreamReader sr = File.OpenText(pathhosts);
                 
                 while ((old = sr.ReadLine()) != null)
                 {        
@@ -365,7 +356,7 @@ namespace tawbah
                 }
 
                 sr.Close();
-                File.WriteAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"), n);
+                File.WriteAllText(pathhosts, n);
             }
            
             catch (Exception ex)
@@ -379,7 +370,7 @@ namespace tawbah
             //تنشيط السمة للقراءة فقط
             try
             {
-                FileInfo hostsnfo2 = new FileInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts"));
+                FileInfo hostsnfo2 = new FileInfo(pathhosts);
                 hostsnfo2.IsReadOnly = true;
             }
            
