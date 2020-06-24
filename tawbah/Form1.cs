@@ -13,7 +13,7 @@ namespace tawbah
         public Form1()
         {
             InitializeComponent();
-       
+
             //Alt+F4 من الأمور الخاصة بتعطيل 
             this.KeyPreview = true;
         }
@@ -22,19 +22,19 @@ namespace tawbah
         string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
 
         //إذا حدث خطأ أثناء عملية التنفيذ
-        public void khataafitanfid() 
+        public void khataafitanfid()
         {
             //إظهار أزرار النافذة، وتنشيط زر حجب المواقع بإخفاء الزر الذي فوقه، وإخفاء الصورة المتحركة للتقدم
             this.ControlBox = true;
             hajbdisabled.Visible = false;
             busy.Visible = false;
 
-               //لمنع ظهور رسالة الخطأ عند تعذر الإتصال بالخادم
-               try
-               {
-                   System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
-               }
-               catch {}
+            //إظهار صفحة الإبلاغ عن الخطأ
+            try
+            {
+                System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
+            }
+            catch { }
 
         }
 
@@ -46,50 +46,50 @@ namespace tawbah
             hajbdisabled.Visible = false;
             busy.Visible = false;
         }
-            
+
         private void Form1_Load(object sender, EventArgs e)
         {
-             //التحقق من وجود إصدار جديد
-             try
-             {
-                 WebClient web2 = new WebClient();
-                 Stream stream = web2.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/raqmalisdar");
-                 using (StreamReader reader = new StreamReader(stream))
-                 {
-                     String textakhiralisdarfilmawqii = reader.ReadToEnd();
-                     raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
-                     var mwq = Convert.ToInt32(raqmalisdarmawqi.Text);
-                     var brn = Convert.ToInt32(raqmalisdarfibarnamj.Text);                           
-                     if (mwq > brn)
-                     {
-                         //فتح نافذة إصدار جديد
-                         Form isdarjadid = new Form5();
-                         isdarjadid.ShowDialog();
-                     }
-                 }
-             }
-
-             //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
-             catch { }
-
-             //LinqBridge.dll التحقق من وجود الملف 
-             if (!File.Exists("LinqBridge.dll"))
-             {
-                 MessageBox.Show("ينقص الملف LinqBridge.dll، قم بإعادة تحميل البرنامج من موقعه الرسمي.", "حدث خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                 Application.Exit();
-             }
-
-             //آخر الأخبار
-             try
-             {
-                 WebClient web = new WebClient();
-                 Stream stream = web.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/akhabr");
-                 using (StreamReader reader = new StreamReader(stream))
-                 {
-                     String text = reader.ReadToEnd();
-                     Akhbar.Text = text;
+            //التحقق من وجود إصدار جديد
+            try
+            {
+                WebClient web2 = new WebClient();
+                Stream stream = web2.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/raqmalisdar");
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    String textakhiralisdarfilmawqii = reader.ReadToEnd();
+                    raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
+                    var mwq = Convert.ToInt32(raqmalisdarmawqi.Text);
+                    var brn = Convert.ToInt32(raqmalisdarfibarnamj.Text);
+                    if (mwq > brn)
+                    {
+                        //فتح نافذة إصدار جديد
+                        Form isdarjadid = new Form5();
+                        isdarjadid.ShowDialog();
+                    }
                 }
-             }
+            }
+
+            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
+            catch { }
+
+            //LinqBridge.dll التحقق من وجود الملف 
+            if (!File.Exists("LinqBridge.dll"))
+            {
+                MessageBox.Show("ينقص الملف LinqBridge.dll، قم بإعادة تحميل البرنامج من موقعه الرسمي.", "حدث خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                Application.Exit();
+            }
+
+            //آخر الأخبار
+            try
+            {
+                WebClient web = new WebClient();
+                Stream stream = web.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/akhabr");
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    String text = reader.ReadToEnd();
+                    Akhbar.Text = text;
+                }
+            }
 
             //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
             catch { }
@@ -115,8 +115,8 @@ namespace tawbah
 
                     else
                     {
-                    var debug1 = MessageBox.Show("هل تريد إسنعادة الملف hosts إلى حالته الأصليّة؟", "حدث خطأ", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                    
+                        var debug1 = MessageBox.Show("هل تريد إسنعادة الملف hosts إلى حالته الأصليّة؟", "حدث خطأ", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+
                         if (debug1 == DialogResult.Yes)
                         {
                             this.ControlBox = false;
@@ -125,8 +125,8 @@ namespace tawbah
                             backgroundWorker2.RunWorkerAsync();
                         }
                     }
-                }          
-              
+                }
+
                 else
                 {
                     MessageBox.Show("يرجى إعادة المحاولة بعد إنتهاء عمليّة حجب المواقع.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
@@ -148,14 +148,23 @@ namespace tawbah
             btnhajb.Refresh();
             btnhajb.BackgroundImage = Properties.Resources.lighthajb;
 
-            //عدم التنفيذ إذا تمت العملية
-            var tma = Convert.ToInt32(tammaawla.Text);
-            
+        //عدم التنفيذ إذا تمت العملية
+            tah:
+            var tma = Convert.ToInt32(tammaawla.Text);  
             if (tma == 1)
             {
-                //إظهار رسالة تم
+                //إذا لم يكن الملف موجودا أو تم حذفه، يمكن إعادة عملية التنفيذ
+                if (!File.Exists(pathhosts))
+                {
+                    tammaawla.Text = "0";
+                    goto tah;
+                }
+                else
+                {
+                //إذا كان الملف موجودا تظهر رسالة تم بإذن الله
                 Form tammaform = new Form2();
                 tammaform.ShowDialog();
+                }
             }
 
             if (tma == 0)
@@ -191,128 +200,78 @@ namespace tawbah
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
-           //التحقق من وجود الملف
-           if (!File.Exists(pathhosts))
-           {
-              //إنشاء الملف إذا لم يكن موجودا
-              try
-              {
-                  using (StreamWriter w = File.AppendText(pathhosts));               
-              }
-
-              catch (Exception ex)
-              {
-                  //إذا حدث خطأ، تتوقف العملية وتظهر رسالة الخطأ
-                  khataafitanfid();
-                  MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                  return;
-              }
-
-              goto starthajb;
-           }
-
-           starthajb:
-           //إلغاء السمة للقراءة فقط والسمات الأخرى
-           FileInfo hostsnfo = new FileInfo(pathhosts);
-           try
-           {
-               File.SetAttributes(pathhosts, FileAttributes.Normal);
-           }
-
-           catch (Exception ex)
-           {
-               khataafitanfid();
-               MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               return;
-           }
-
-            //hosts حذف المواقع التي أضافها البرنامج إلى الملف
-            //(twbh حذف السطور التي تحتوي على كلمة)
             try
             {
-               string search_text = "twbh";
-               string old;
-               string n = "";
-               StreamReader sr = File.OpenText(pathhosts);
-               
-               while ((old = sr.ReadLine()) != null)
-               {
-                   if (!old.Contains(search_text))
-                   {
-                       n += old + Environment.NewLine;
-                   }
-               }
-               sr.Close();
-               File.WriteAllText(pathhosts, n);
-           }
 
-           catch (Exception ex)
-           {
-               khataafitanfid();
-               MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               return;
-           }
+                //التحقق من وجود الملف
+                if (!File.Exists(pathhosts))
+                {
+                    //إنشاء الملف إذا لم يكن موجودا
+                    using (StreamWriter w = File.AppendText(pathhosts)) ;
+                    goto starthajb;
+                }
 
-           //hosts إضافة السطور إلى الملف 
-           try
-           {
-               using (StreamWriter sw = File.AppendText(pathhosts))
-               {
-                   sw.WriteLine(Properties.Resources.qaimatalmawaqi);
-               }
-           }
+                starthajb:
+                //إلغاء السمة للقراءة فقط والسمات الأخرى
+                FileInfo hostsnfo = new FileInfo(pathhosts);
+                File.SetAttributes(pathhosts, FileAttributes.Normal);
 
-           catch (Exception ex)
-           {
-               khataafitanfid();
-               MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               return;
-           }
+                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+                //(twbh حذف السطور التي تحتوي على كلمة)
+                string search_text = "twbh";
+                string old;
+                string n = "";
+                StreamReader sr = File.OpenText(pathhosts);
 
-           //حذف السطور المكررة
-         
-           try
-           {
-               string[] lines = File.ReadAllLines(pathhosts);
-               File.WriteAllLines(pathhosts, lines.Distinct().ToArray());
-           }
+                while ((old = sr.ReadLine()) != null)
+                {
+                    if (!old.Contains(search_text))
+                    {
+                        n += old + Environment.NewLine;
+                    }
+                }
+                sr.Close();
+                File.WriteAllText(pathhosts, n);
 
-           catch (Exception ex)
-           {
-               khataafitanfid();
-               MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               return;
-           }
 
-           //تنشيط السمة للقراءة فقط
-           try
-           {
-               hostsnfo.IsReadOnly = true;
-           }
+                //hosts إضافة السطور إلى الملف 
+                using (StreamWriter sw = File.AppendText(pathhosts))
+                {
+                    sw.WriteLine(Properties.Resources.qaimatalmawaqi);
+                }
 
-           catch (Exception ex)
-           {
-               khataafitanfid();
-               MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               return;
-           }
+                //حذف السطور المكررة
+                string[] lines = File.ReadAllLines(pathhosts);
+                File.WriteAllLines(pathhosts, lines.Distinct().ToArray());
 
-           //إنتظار 40 ثانية
-           Thread.Sleep(40000);
+                //تنشيط السمة للقراءة فقط
+                hostsnfo.IsReadOnly = true;
+            }
 
-           //بعد إنتهاء عملية حجب المواقع
-           intihaa();
+            catch (Exception k)
+            {
+                //إذا حدث خطأ، تتوقف العملية وتظهر رسالة الخطأ
+                khataafitanfid();
+                MessageBox.Show(k.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                return;
+            }
 
-           //async إيقاف
-           backgroundWorker1.CancelAsync();
+        //إنتظار 40 ثانية
+        Thread.Sleep(40000);
 
-           //إظهار رسالة تم
-           Form tammaform = new Form2();
-           tammaform.ShowDialog();
+        //بعد إنتهاء عملية حجب المواقع
+        intihaa();
 
-           //لا يمكن التنفيذ مرة أخرى إن شاء الله لأن العملية انتهت والحمد لله
-           tammaawla.Text = "1";
+        //async إيقاف
+        backgroundWorker1.CancelAsync();
 
+        //إظهار رسالة تم
+        Form tammaform = new Form2();
+        tammaform.ShowDialog();
+
+        //لا يمكن التنفيذ مرة أخرى إن شاء الله لأن العملية انتهت والحمد لله
+        tammaawla.Text = "1";
+        
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -323,77 +282,56 @@ namespace tawbah
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
-            try
-            {
-                FileInfo hostsnfo = new FileInfo(pathhosts);
-                //إلغاء السمة للقراءة فقط والسمات الأخرى
-                File.SetAttributes(pathhosts, FileAttributes.Normal);
-            }
-           
-            catch (Exception ex)
-            {
-                khataafitanfid();
-                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                MessageBox.Show("لم يتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                return;
-            }
 
-            //hosts حذف المواقع التي أضافها البرنامج إلى الملف
-            //twbh حذف السطور التي تحتوي على كلمة
-            try
-            {
-                string search_text = "twbh";
-                string old;
-                string n = "";
-                StreamReader sr = File.OpenText(pathhosts);
-                
-                while ((old = sr.ReadLine()) != null)
-                {        
-                    if (!old.Contains(search_text))
-                    {
-                        n += old + Environment.NewLine;
-                    }
-                }
+           try { 
+           //إلغاء السمة للقراءة فقط والسمات الأخرى
+           FileInfo hostsnfo = new FileInfo(pathhosts);   
+           File.SetAttributes(pathhosts, FileAttributes.Normal);
+ 
 
-                sr.Close();
-                File.WriteAllText(pathhosts, n);
-            }
-           
-            catch (Exception ex)
-            {
-                khataafitanfid();
-                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                MessageBox.Show("لم يتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                return;
-            }
+           //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+           //twbh حذف السطور التي تحتوي على كلمة
+           string search_text = "twbh";
+           string old;
+           string n = "";
+           StreamReader sr = File.OpenText(pathhosts);
 
-            //تنشيط السمة للقراءة فقط
-            try
-            {
-                FileInfo hostsnfo2 = new FileInfo(pathhosts);
-                hostsnfo2.IsReadOnly = true;
-            }
-           
-            catch (Exception ex)
-            {
-                khataafitanfid();
-                MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                MessageBox.Show("لم يتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                return;
-            }
+              while ((old = sr.ReadLine()) != null)
+              {
+                 if (!old.Contains(search_text))
+                 {
+                    n += old + Environment.NewLine;
+                 }
+              }
 
-            //إنتظار 10 ثواني
-            Thread.Sleep(10000);
+           sr.Close();
+           File.WriteAllText(pathhosts, n);
+            
+           //تنشيط السمة للقراءة فقط
+           FileInfo hostsnfo2 = new FileInfo(pathhosts);
+           hostsnfo2.IsReadOnly = true;
+           }
 
-            //بعد إنتهاء عملية استعادة الملف إلى حالته الأصلية
-            intihaa();
+           catch (Exception k2)
+           {
+               khataafitanfid();
+               MessageBox.Show(k2.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+               MessageBox.Show("لم يتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+               return;
+           }
 
-            //async إيقاف
-            backgroundWorker1.CancelAsync();
+           //إنتظار 10 ثواني
+           Thread.Sleep(10000);
 
-            //إظهار رسالة تم
-            MessageBox.Show("تمّ إستعادة الملف hosts إلى حالته الأصليّة.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-            backgroundWorker2.CancelAsync();
+           //بعد إنتهاء عملية استعادة الملف إلى حالته الأصلية
+           intihaa();
+
+           //async إيقاف
+           backgroundWorker1.CancelAsync();
+
+           //إظهار رسالة تم
+           MessageBox.Show("تمّ إستعادة الملف hosts إلى حالته الأصليّة.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+           backgroundWorker2.CancelAsync();
         }
 
         private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
