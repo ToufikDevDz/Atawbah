@@ -1,7 +1,8 @@
-C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\Atawbah.exe
 C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\Atawbah.exe.config
+C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\Atawbah.exe
 C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\Atawbah.pdb
 C:\Users\toufi\source\repos\tawbah\tawbah\bin\Debug\LinqBridge.dll
+C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.csprojAssemblyReference.cache
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.Form1.resources
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.Form2.resources
 C:\Users\toufi\source\repos\tawbah\tawbah\obj\Debug\tawbah.Form3.resources

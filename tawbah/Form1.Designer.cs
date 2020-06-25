@@ -191,9 +191,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(249, 321);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 18);
+            this.label1.Size = new System.Drawing.Size(124, 18);
             this.label1.TabIndex = 9;
-            this.label1.Text = "هـ (للتّجريب فقط)";
+            this.label1.Text = "و (للتّجريب فقط)";
             // 
             // hajbdisabled
             // 
