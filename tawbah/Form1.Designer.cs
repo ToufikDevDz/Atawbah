@@ -35,17 +35,9 @@
             this.hawla = new System.Windows.Forms.PictureBox();
             this.Akhbar = new System.Windows.Forms.Label();
             this.itaralakhbar = new System.Windows.Forms.PictureBox();
-            this.idhghat = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.hajbdisabled = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.busy = new System.Windows.Forms.PictureBox();
-            this.OROOOO = new System.Windows.Forms.PictureBox();
-            this.OOROOO = new System.Windows.Forms.PictureBox();
-            this.OOOROO = new System.Windows.Forms.PictureBox();
-            this.OOOORO = new System.Windows.Forms.PictureBox();
-            this.OOOOOR = new System.Windows.Forms.PictureBox();
-            this.ROOOOO = new System.Windows.Forms.PictureBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.Assemby = new System.Windows.Forms.Label();
             this.raqmalisdarmawqi = new System.Windows.Forms.Label();
@@ -54,20 +46,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tammaawla = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hawla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idhghat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OROOOO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOROOO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOROO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOORO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOOOR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ROOOOO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnhajb
@@ -75,14 +64,14 @@
             this.btnhajb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhajb.BackColor = System.Drawing.SystemColors.Control;
+            this.btnhajb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnhajb.BackgroundImage = global::tawbah.Properties.Resources.hajb;
             this.btnhajb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnhajb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnhajb.Location = new System.Drawing.Point(125, 182);
+            this.btnhajb.Location = new System.Drawing.Point(177, 203);
             this.btnhajb.Margin = new System.Windows.Forms.Padding(0);
             this.btnhajb.Name = "btnhajb";
-            this.btnhajb.Size = new System.Drawing.Size(359, 135);
+            this.btnhajb.Size = new System.Drawing.Size(255, 91);
             this.btnhajb.TabIndex = 1;
             this.btnhajb.TabStop = false;
             this.btnhajb.Click += new System.EventHandler(this.btnhajb_Click);
@@ -94,7 +83,7 @@
             this.wajiha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wajiha.BackColor = System.Drawing.SystemColors.Control;
+            this.wajiha.BackColor = System.Drawing.Color.WhiteSmoke;
             this.wajiha.BackgroundImage = global::tawbah.Properties.Resources.wajiha;
             this.wajiha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.wajiha.Location = new System.Drawing.Point(12, 12);
@@ -108,13 +97,13 @@
             this.mawqi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mawqi.BackColor = System.Drawing.SystemColors.Control;
+            this.mawqi.BackColor = System.Drawing.Color.WhiteSmoke;
             this.mawqi.BackgroundImage = global::tawbah.Properties.Resources.mawqi;
             this.mawqi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.mawqi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mawqi.Location = new System.Drawing.Point(439, 415);
+            this.mawqi.Location = new System.Drawing.Point(448, 417);
             this.mawqi.Name = "mawqi";
-            this.mawqi.Size = new System.Drawing.Size(138, 35);
+            this.mawqi.Size = new System.Drawing.Size(125, 29);
             this.mawqi.TabIndex = 3;
             this.mawqi.TabStop = false;
             this.mawqi.Click += new System.EventHandler(this.mawqi_Click);
@@ -126,13 +115,13 @@
             this.hawla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hawla.BackColor = System.Drawing.SystemColors.Control;
+            this.hawla.BackColor = System.Drawing.Color.WhiteSmoke;
             this.hawla.BackgroundImage = global::tawbah.Properties.Resources.hawla;
             this.hawla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.hawla.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hawla.Location = new System.Drawing.Point(32, 415);
+            this.hawla.Location = new System.Drawing.Point(38, 417);
             this.hawla.Name = "hawla";
-            this.hawla.Size = new System.Drawing.Size(138, 35);
+            this.hawla.Size = new System.Drawing.Size(125, 29);
             this.hawla.TabIndex = 4;
             this.hawla.TabStop = false;
             this.hawla.Click += new System.EventHandler(this.hawla_Click_1);
@@ -144,14 +133,14 @@
             this.Akhbar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Akhbar.BackColor = System.Drawing.SystemColors.Control;
+            this.Akhbar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Akhbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Akhbar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Akhbar.ForeColor = System.Drawing.Color.Black;
-            this.Akhbar.Location = new System.Drawing.Point(189, 424);
+            this.Akhbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Akhbar.Location = new System.Drawing.Point(200, 424);
             this.Akhbar.Name = "Akhbar";
             this.Akhbar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Akhbar.Size = new System.Drawing.Size(231, 15);
+            this.Akhbar.Size = new System.Drawing.Size(209, 15);
             this.Akhbar.TabIndex = 5;
             this.Akhbar.Text = "أخبار البرنامج (تعذّر الإتّصال بالخادم)";
             this.Akhbar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,52 +151,28 @@
             this.itaralakhbar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.itaralakhbar.BackColor = System.Drawing.SystemColors.Control;
+            this.itaralakhbar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.itaralakhbar.BackgroundImage = global::tawbah.Properties.Resources.frame;
             this.itaralakhbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.itaralakhbar.Location = new System.Drawing.Point(176, 419);
+            this.itaralakhbar.Location = new System.Drawing.Point(196, 419);
             this.itaralakhbar.Name = "itaralakhbar";
-            this.itaralakhbar.Size = new System.Drawing.Size(257, 25);
+            this.itaralakhbar.Size = new System.Drawing.Size(219, 25);
             this.itaralakhbar.TabIndex = 6;
             this.itaralakhbar.TabStop = false;
-            // 
-            // idhghat
-            // 
-            this.idhghat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.idhghat.BackgroundImage = global::tawbah.Properties.Resources.اضغط_على_هذا_الزر;
-            this.idhghat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.idhghat.Location = new System.Drawing.Point(139, 154);
-            this.idhghat.Name = "idhghat";
-            this.idhghat.Size = new System.Drawing.Size(330, 26);
-            this.idhghat.TabIndex = 7;
-            this.idhghat.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(249, 321);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 18);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "و (للتّجريب فقط)";
             // 
             // hajbdisabled
             // 
             this.hajbdisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hajbdisabled.BackColor = System.Drawing.SystemColors.Control;
+            this.hajbdisabled.BackColor = System.Drawing.Color.WhiteSmoke;
             this.hajbdisabled.BackgroundImage = global::tawbah.Properties.Resources.hajb;
             this.hajbdisabled.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.hajbdisabled.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.hajbdisabled.Location = new System.Drawing.Point(125, 182);
+            this.hajbdisabled.Location = new System.Drawing.Point(177, 203);
             this.hajbdisabled.Margin = new System.Windows.Forms.Padding(0);
             this.hajbdisabled.Name = "hajbdisabled";
-            this.hajbdisabled.Size = new System.Drawing.Size(359, 135);
+            this.hajbdisabled.Size = new System.Drawing.Size(255, 91);
             this.hajbdisabled.TabIndex = 10;
             this.hajbdisabled.TabStop = false;
             this.hajbdisabled.UseWaitCursor = true;
@@ -223,81 +188,14 @@
             // 
             // busy
             // 
-            this.busy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.busy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.busy.Image = global::tawbah.Properties.Resources.taqdum;
-            this.busy.Location = new System.Drawing.Point(194, 396);
+            this.busy.Location = new System.Drawing.Point(200, 425);
             this.busy.Name = "busy";
-            this.busy.Size = new System.Drawing.Size(220, 20);
+            this.busy.Size = new System.Drawing.Size(209, 15);
             this.busy.TabIndex = 12;
             this.busy.TabStop = false;
             this.busy.Visible = false;
-            // 
-            // OROOOO
-            // 
-            this.OROOOO.BackColor = System.Drawing.SystemColors.Control;
-            this.OROOOO.BackgroundImage = global::tawbah.Properties.Resources.raqm3;
-            this.OROOOO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.OROOOO.Location = new System.Drawing.Point(361, 362);
-            this.OROOOO.Name = "OROOOO";
-            this.OROOOO.Size = new System.Drawing.Size(19, 25);
-            this.OROOOO.TabIndex = 13;
-            this.OROOOO.TabStop = false;
-            // 
-            // OOROOO
-            // 
-            this.OOROOO.BackColor = System.Drawing.SystemColors.Control;
-            this.OOROOO.BackgroundImage = global::tawbah.Properties.Resources.raqm5;
-            this.OOROOO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.OOROOO.Location = new System.Drawing.Point(343, 362);
-            this.OOROOO.Name = "OOROOO";
-            this.OOROOO.Size = new System.Drawing.Size(19, 25);
-            this.OOROOO.TabIndex = 13;
-            this.OOROOO.TabStop = false;
-            // 
-            // OOOROO
-            // 
-            this.OOOROO.BackColor = System.Drawing.SystemColors.Control;
-            this.OOOROO.BackgroundImage = global::tawbah.Properties.Resources.raqm9;
-            this.OOOROO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.OOOROO.Location = new System.Drawing.Point(323, 362);
-            this.OOOROO.Name = "OOOROO";
-            this.OOOROO.Size = new System.Drawing.Size(19, 25);
-            this.OOOROO.TabIndex = 13;
-            this.OOOROO.TabStop = false;
-            // 
-            // OOOORO
-            // 
-            this.OOOORO.BackColor = System.Drawing.SystemColors.Control;
-            this.OOOORO.BackgroundImage = global::tawbah.Properties.Resources.raqm9;
-            this.OOOORO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.OOOORO.Location = new System.Drawing.Point(305, 362);
-            this.OOOORO.Name = "OOOORO";
-            this.OOOORO.Size = new System.Drawing.Size(19, 25);
-            this.OOOORO.TabIndex = 13;
-            this.OOOORO.TabStop = false;
-            // 
-            // OOOOOR
-            // 
-            this.OOOOOR.BackColor = System.Drawing.SystemColors.Control;
-            this.OOOOOR.BackgroundImage = global::tawbah.Properties.Resources.raqm0;
-            this.OOOOOR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.OOOOOR.Location = new System.Drawing.Point(286, 362);
-            this.OOOOOR.Name = "OOOOOR";
-            this.OOOOOR.Size = new System.Drawing.Size(19, 25);
-            this.OOOOOR.TabIndex = 13;
-            this.OOOOOR.TabStop = false;
-            // 
-            // ROOOOO
-            // 
-            this.ROOOOO.BackColor = System.Drawing.SystemColors.Control;
-            this.ROOOOO.BackgroundImage = global::tawbah.Properties.Resources.noqta;
-            this.ROOOOO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ROOOOO.Location = new System.Drawing.Point(380, 362);
-            this.ROOOOO.Name = "ROOOOO";
-            this.ROOOOO.Size = new System.Drawing.Size(10, 25);
-            this.ROOOOO.TabIndex = 13;
-            this.ROOOOO.TabStop = false;
-            this.ROOOOO.Visible = false;
             // 
             // backgroundWorker2
             // 
@@ -378,12 +276,34 @@
             this.tammaawla.Text = "0";
             this.tammaawla.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.adadalmawaqi;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(272, 355);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 29);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(229, 307);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 41);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(609, 477);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tammaawla);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -391,15 +311,7 @@
             this.Controls.Add(this.raqmalisdarfibarnamj);
             this.Controls.Add(this.raqmalisdarmawqi);
             this.Controls.Add(this.Assemby);
-            this.Controls.Add(this.OROOOO);
-            this.Controls.Add(this.OOOORO);
-            this.Controls.Add(this.OOROOO);
-            this.Controls.Add(this.OOOROO);
-            this.Controls.Add(this.ROOOOO);
-            this.Controls.Add(this.OOOOOR);
             this.Controls.Add(this.busy);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.idhghat);
             this.Controls.Add(this.Akhbar);
             this.Controls.Add(this.hawla);
             this.Controls.Add(this.mawqi);
@@ -423,15 +335,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hawla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idhghat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OROOOO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOROOO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOROO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOORO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OOOOOR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ROOOOO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,17 +352,9 @@
         private System.Windows.Forms.PictureBox hawla;
         private System.Windows.Forms.Label Akhbar;
         private System.Windows.Forms.PictureBox itaralakhbar;
-        private System.Windows.Forms.PictureBox idhghat;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox hajbdisabled;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox busy;
-        private System.Windows.Forms.PictureBox OROOOO;
-        private System.Windows.Forms.PictureBox OOROOO;
-        private System.Windows.Forms.PictureBox OOOROO;
-        private System.Windows.Forms.PictureBox OOOORO;
-        private System.Windows.Forms.PictureBox OOOOOR;
-        private System.Windows.Forms.PictureBox ROOOOO;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Label Assemby;
         private System.Windows.Forms.Label raqmalisdarmawqi;
@@ -464,6 +363,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label tammaawla;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

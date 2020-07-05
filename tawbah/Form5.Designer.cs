@@ -38,7 +38,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.isdarjadid;
-            this.pictureBox1.Location = new System.Drawing.Point(-14, -11);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(438, 272);
             this.pictureBox1.TabIndex = 0;
@@ -49,7 +49,7 @@
             this.tahmil.BackgroundImage = global::tawbah.Properties.Resources.tahmil;
             this.tahmil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahmil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahmil.Location = new System.Drawing.Point(126, 197);
+            this.tahmil.Location = new System.Drawing.Point(126, 239);
             this.tahmil.Name = "tahmil";
             this.tahmil.Size = new System.Drawing.Size(159, 49);
             this.tahmil.TabIndex = 1;
@@ -62,7 +62,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 251);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(410, 298);
             this.Controls.Add(this.tahmil);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -72,7 +73,6 @@
             this.Name = "Form5";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "إصدار جديد";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

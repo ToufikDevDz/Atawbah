@@ -394,6 +394,5 @@ namespace tawbah
         private void Akhbar_Click(object sender, EventArgs e)
         {
         }
-
     }
 }

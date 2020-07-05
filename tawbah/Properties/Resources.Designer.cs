@@ -63,6 +63,26 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap adadalmawaqi {
+            get {
+                object obj = ResourceManager.GetObject("adadalmawaqi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alisdar {
+            get {
+                object obj = ResourceManager.GetObject("alisdar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chokr {
             get {
                 object obj = ResourceManager.GetObject("chokr", resourceCulture);
@@ -72,10 +92,10 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red192\green80\blue77;\red0\green176\blue80;}
+        ///{\colortbl ;\red255\green112\blue43;\red0\green176\blue80;\red0\green128\blue0;\red128\green64\blue0;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
         ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\b\f0\rtlch\fs36\&apos;d4\&apos;df\&apos;d1:\par
-        ///\cf2\ulnone\b0\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 \&apos;da\&apos;d2\&apos;f8 \&apos;e6\&apos;cc\&apos;e1\&apos;f8 \b0\&apos;c7\&apos;e1\&apos;f8\&apos;d0\&apos;ed \&apos;e6\&apos;dd\&apos;f8\&apos;de\&apos;e4\&apos; [rest of string was truncated]&quot;;.
+        ///\cf2\ulnone\b0\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 \&apos;da\&apos;d2\&apos;f8 \&apos;e6\&apos;cc\&apos;e1\&apos;f8 \b [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string chokr1 {
             get {
@@ -89,16 +109,6 @@ namespace tawbah.Properties {
         internal static System.Drawing.Bitmap frame {
             get {
                 object obj = ResourceManager.GetObject("frame", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap frame0 {
-            get {
-                object obj = ResourceManager.GetObject("frame0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +166,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap itar21 {
+            get {
+                object obj = ResourceManager.GetObject("itar21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap khorodj {
             get {
                 object obj = ResourceManager.GetObject("khorodj", resourceCulture);
@@ -175,11 +195,10 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red192\green80\blue77;\red0\green176\blue80;\red247\green150\blue70;\red0\green77\blue187;}
+        ///{\colortbl ;\red255\green128\blue0;\red192\green80\blue77;\red0\green176\blue80;\red240\green120\blue0;\red128\green64\blue0;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\b\f0\rtlch\fs32\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5:\par
-        ///\ulnone\b0\fs28\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf2\ul\b\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\cf0\ulnone\b0\fs32\par
-        ///\cf1\fs24\&apos;e [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\b\f0\rtlch\fs36\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5:\par
+        ///\cf2\ulnone\b0\fs28\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf3\ul\b\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\cf0\ulnone [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string License1 {
             get {
@@ -260,39 +279,9 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
-            get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap mawqi {
             get {
                 object obj = ResourceManager.GetObject("mawqi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap noqta {
-            get {
-                object obj = ResourceManager.GetObject("noqta", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap noqtatayn {
-            get {
-                object obj = ResourceManager.GetObject("noqtatayn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -312,121 +301,11 @@ namespace tawbah.Properties {
         ///0.0.0.0 064bdf.r.axf8.net # twbh
         ///0.0.0.0 07634.com # twbh
         ///0.0.0.0 0900-telefonerotik.de # twbh
-        ///0.0.0.0 0d7292.r.axf8.net  [rest of string was truncated]&quot;;.
+        ///0.0.0.0 0d72 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string qaimatalmawaqi {
             get {
                 return ResourceManager.GetString("qaimatalmawaqi", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm0 {
-            get {
-                object obj = ResourceManager.GetObject("raqm0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm1 {
-            get {
-                object obj = ResourceManager.GetObject("raqm1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm2 {
-            get {
-                object obj = ResourceManager.GetObject("raqm2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm3 {
-            get {
-                object obj = ResourceManager.GetObject("raqm3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm4 {
-            get {
-                object obj = ResourceManager.GetObject("raqm4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm5 {
-            get {
-                object obj = ResourceManager.GetObject("raqm5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm6 {
-            get {
-                object obj = ResourceManager.GetObject("raqm6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm7 {
-            get {
-                object obj = ResourceManager.GetObject("raqm7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm8 {
-            get {
-                object obj = ResourceManager.GetObject("raqm8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raqm9 {
-            get {
-                object obj = ResourceManager.GetObject("raqm9", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tahaqoq {
-            get {
-                object obj = ResourceManager.GetObject("tahaqoq", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -476,16 +355,6 @@ namespace tawbah.Properties {
         internal static System.Drawing.Bitmap wajiha {
             get {
                 object obj = ResourceManager.GetObject("wajiha", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap اضغط_على_هذا_الزر {
-            get {
-                object obj = ResourceManager.GetObject("اضغط على هذا الزر", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

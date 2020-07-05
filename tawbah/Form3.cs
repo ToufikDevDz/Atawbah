@@ -68,7 +68,7 @@ namespace tawbah
             //فتح صفحة الإبلاغ عن الخطأ
             try
             {
-               System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
+               System.Diagnostics.Process.Start("https://forms.gle/raB5SwrJ68bPczzb9");
             }
             catch { }
         }     
@@ -85,6 +85,15 @@ namespace tawbah
             //بإذن الله beam هذا يساعد على حجب
             label2.Focus();
         }
- 
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

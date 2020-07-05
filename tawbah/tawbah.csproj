@@ -23,7 +23,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.0.2</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>multi.ico</ApplicationIcon>
+    <ApplicationIcon>aycona.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -197,37 +197,23 @@
     <None Include="Resources\hawla.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="multi.ico" />
-    <None Include="Resources\tahaqoq.png" />
+    <Content Include="aycona.ico" />
+    <None Include="Resources\alisdar1.png" />
+    <None Include="Resources\adadalmawaqi.png" />
+    <None Include="Resources\itar21.png" />
     <None Include="Resources\tahmillight.png" />
     <None Include="Resources\tahmil.png" />
     <None Include="Resources\isdarjadid.png" />
     <None Include="Resources\tamma2.png" />
     <None Include="Resources\isbir.png" />
-    <None Include="Resources\raqm9.png" />
-    <None Include="Resources\raqm8.png" />
-    <None Include="Resources\raqm7.png" />
-    <None Include="Resources\raqm6.png" />
-    <None Include="Resources\raqm5.png" />
-    <None Include="Resources\raqm4.png" />
-    <None Include="Resources\raqm3.png" />
-    <None Include="Resources\raqm2.png" />
-    <None Include="Resources\raqm1.png" />
-    <None Include="Resources\raqm0.png" />
-    <None Include="Resources\noqtatayn.png" />
-    <None Include="Resources\noqta.png" />
-    <None Include="Resources\frame0.png" />
     <None Include="Resources\lightlicense.png" />
     <None Include="Resources\lightkhorodj.png" />
     <None Include="Resources\lightiblagh.png" />
     <None Include="Resources\lightchokr.png" />
     <None Include="Resources\khorodj.png" />
     <None Include="Resources\iblagh.png" />
-    <None Include="Resources\iblagh2.png" />
-    <None Include="Resources\logo.png" />
     <None Include="Resources\license.png" />
     <None Include="Resources\chokr.png" />
-    <None Include="Resources\اضغط على هذا الزر3.png" />
     <None Include="Resources\ajax-loader.gif" />
     <None Include="Resources\1.png" />
     <None Include="Resources\qaimatalmawaqi.txt" />

@@ -37,13 +37,13 @@
             // 
             // khorodj
             // 
-            this.khorodj.BackColor = System.Drawing.SystemColors.Control;
+            this.khorodj.BackColor = System.Drawing.Color.White;
             this.khorodj.BackgroundImage = global::tawbah.Properties.Resources.khorodj;
             this.khorodj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.khorodj.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.khorodj.Location = new System.Drawing.Point(114, 397);
+            this.khorodj.Location = new System.Drawing.Point(155, 417);
             this.khorodj.Name = "khorodj";
-            this.khorodj.Size = new System.Drawing.Size(237, 49);
+            this.khorodj.Size = new System.Drawing.Size(155, 50);
             this.khorodj.TabIndex = 0;
             this.khorodj.TabStop = false;
             this.khorodj.Click += new System.EventHandler(this.khorodj_Click);
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(465, 453);
+            this.ClientSize = new System.Drawing.Size(465, 484);
             this.Controls.Add(this.khorodj);
             this.Controls.Add(this.tamma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -75,9 +75,9 @@
             this.Name = "Form2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تمّ حجب المواقع";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.khorodj)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamma)).EndInit();
             this.ResumeLayout(false);

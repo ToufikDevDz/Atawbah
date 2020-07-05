@@ -1,6 +1,9 @@
 #Anti-Porn hosts file # twbh
 #Free List By 4skinSkywalker : https://github.com/4skinSkywalker/anti-porn-hosts-file # twbh
-0.0.0.0 0.nextyourcontent.com # twbh
+#tahaqoq # twbh
+0.0.0.0 lilhajb.blogspot.com # twbh
+0.0.0.0 www.lilhajb.blogspot.com # twbh
+#mawaqi # twbh
 0.0.0.0 000free.us # twbh
 0.0.0.0 0013langford.tumblr.com # twbh
 0.0.0.0 007angels.com # twbh
