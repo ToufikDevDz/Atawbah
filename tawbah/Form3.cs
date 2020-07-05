@@ -59,7 +59,7 @@ namespace tawbah
         }
         private void iblagh_Click(object sender, EventArgs e)
         {
-            //تأثير عند الضغط
+            //تأثير عند الضغط على الزر
             iblagh.BackgroundImage = Properties.Resources.iblagh;
             iblagh.Refresh();
             Thread.Sleep(100);
