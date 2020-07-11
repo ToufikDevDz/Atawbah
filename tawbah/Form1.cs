@@ -12,65 +12,30 @@ namespace tawbah
     {
         public Form1()
         {
-            InitializeComponent();
+           InitializeComponent();
+           //التحقق من وجود إصدار جديد
+           try
+           {
+              WebClient web1 = new WebClient();
+              Stream stream1 = web1.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/raqmalisdar");
+              using (StreamReader reader = new StreamReader(stream1))
+              {
+                 String textakhiralisdarfilmawqii = reader.ReadToEnd();
+                 raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
+                 var mwq = Convert.ToInt32(raqmalisdarmawqi.Text);
+                 var brn = Convert.ToInt32(raqmalisdarfibarnamj.Text);
+                 if (mwq > brn)
+                 {
+                    //فتح نافذة إصدار جديد
+                    Form isdarjadid = new Form5();
+                    isdarjadid.ShowDialog();
+                 }
+              }
+           }
 
-            //Alt+F4 من الأمور الخاصة بتعطيل 
-            this.KeyPreview = true;
-        }
+           //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
+           catch { }
 
-        //hosts موقع الملف 
-        string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
-
-        //إذا حدث خطأ أثناء عملية التنفيذ
-        public void khataafitanfid()
-        {
-            //إظهار أزرار النافذة، وتنشيط زر حجب المواقع بإخفاء الزر الذي فوقه، وإخفاء الصورة المتحركة للتقدم
-            this.ControlBox = true;
-            hajbdisabled.Visible = false;
-            busy.Visible = false;
-
-            //إظهار صفحة الإبلاغ عن الخطأ
-            try
-            {
-                System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
-            }
-            catch { }
-
-        }
-
-        //بعد انتهاء عملية التنفيذ
-        public void intihaa()
-        {
-            //إظهار أزرار النافذة، تنشيط زر حجب المواقع، وإخفاء الصورة المتحركة للتقدم
-            this.ControlBox = true;
-            hajbdisabled.Visible = false;
-            busy.Visible = false;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //التحقق من وجود إصدار جديد
-            try
-            {
-                WebClient web2 = new WebClient();
-                Stream stream = web2.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/raqmalisdar");
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    String textakhiralisdarfilmawqii = reader.ReadToEnd();
-                    raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
-                    var mwq = Convert.ToInt32(raqmalisdarmawqi.Text);
-                    var brn = Convert.ToInt32(raqmalisdarfibarnamj.Text);
-                    if (mwq > brn)
-                    {
-                        //فتح نافذة إصدار جديد
-                        Form isdarjadid = new Form5();
-                        isdarjadid.ShowDialog();
-                    }
-                }
-            }
-
-            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
-            catch { }
 
             //LinqBridge.dll التحقق من وجود الملف 
             if (!File.Exists("LinqBridge.dll"))
@@ -82,9 +47,9 @@ namespace tawbah
             //آخر الأخبار
             try
             {
-                WebClient web = new WebClient();
-                Stream stream = web.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/akhabr");
-                using (StreamReader reader = new StreamReader(stream))
+                WebClient web2 = new WebClient();
+                Stream stream2 = web2.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/akhabr");
+                using (StreamReader reader = new StreamReader(stream2))
                 {
                     String text = reader.ReadToEnd();
                     Akhbar.Text = text;
@@ -93,6 +58,43 @@ namespace tawbah
 
             //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
             catch { }
+
+            //Alt+F4 من الأمور الخاصة بتعطيل 
+            this.KeyPreview = true;
+        }
+
+        //hosts موقع الملف 
+        string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
+
+        //إذا حدث خطأ أثناء عملية التنفيذ
+        public void khataafitanfid()
+        {
+           //إظهار أزرار النافذة، وتنشيط زر حجب المواقع بإخفاء الزر الذي فوقه، وإخفاء الصورة المتحركة للتقدم
+           this.ControlBox = true;
+           hajbdisabled.Visible = false;
+           busy.Visible = false;
+
+           //إظهار صفحة الإبلاغ عن الخطأ
+           try
+           {
+               System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
+           }
+           catch { }
+        }
+
+        //بعد انتهاء عملية التنفيذ
+        public void intihaa()
+        {
+           //إظهار أزرار النافذة، تنشيط زر حجب المواقع، وإخفاء الصورة المتحركة للتقدم
+           this.ControlBox = true;
+           hajbdisabled.Visible = false;
+           busy.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -394,5 +396,6 @@ namespace tawbah
         private void Akhbar_Click(object sender, EventArgs e)
         {
         }
+
     }
 }

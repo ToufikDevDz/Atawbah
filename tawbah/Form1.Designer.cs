@@ -48,6 +48,7 @@
             this.tammaawla = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
@@ -209,11 +210,11 @@
             this.Assemby.AutoSize = true;
             this.Assemby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Assemby.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.Assemby.Location = new System.Drawing.Point(136, 27);
+            this.Assemby.Location = new System.Drawing.Point(164, 27);
             this.Assemby.Name = "Assemby";
-            this.Assemby.Size = new System.Drawing.Size(322, 13);
+            this.Assemby.Size = new System.Drawing.Size(281, 13);
             this.Assemby.TabIndex = 14;
-            this.Assemby.Text = "لا تنسى تغيير إصدار البرنامج وتاريخه في معلومات assembly";
+            this.Assemby.Text = "لا تنسى تغيير إصدار البرنامج في معلومات assembly";
             this.Assemby.Visible = false;
             // 
             // raqmalisdarmawqi
@@ -233,7 +234,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "1";
+            this.raqmalisdarfibarnamj.Text = "2";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -259,7 +260,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 85);
+            this.label4.Location = new System.Drawing.Point(61, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 19;
@@ -269,7 +270,7 @@
             // tammaawla
             // 
             this.tammaawla.AutoSize = true;
-            this.tammaawla.Location = new System.Drawing.Point(36, 85);
+            this.tammaawla.Location = new System.Drawing.Point(36, 109);
             this.tammaawla.Name = "tammaawla";
             this.tammaawla.Size = new System.Drawing.Size(13, 13);
             this.tammaawla.TabIndex = 20;
@@ -290,11 +291,23 @@
             // 
             this.pictureBox2.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(229, 307);
+            this.pictureBox2.Location = new System.Drawing.Point(235, 309);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(58, 41);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(35, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "لا تنسى تغيير brj\r\n";
+            this.label1.Visible = false;
             // 
             // Form1
             // 
@@ -302,6 +315,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(609, 477);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tammaawla);
@@ -365,6 +379,7 @@
         private System.Windows.Forms.Label tammaawla;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
