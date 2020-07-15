@@ -14,6 +14,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = التوبة برنامج مجاني لحجب المواقع الخليعة الخبيثة
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

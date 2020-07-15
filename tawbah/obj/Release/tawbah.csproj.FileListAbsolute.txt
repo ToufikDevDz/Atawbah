@@ -14,6 +14,7 @@ C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.csproj.CopyComplete
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\Atawbah.exe
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\Atawbah.pdb
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\LinqBridge.dll
+C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.csprojAssemblyReference.cache
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form1.resources
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form2.resources
 C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form3.resources
