@@ -234,7 +234,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "2";
+            this.raqmalisdarfibarnamj.Text = "3";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -291,9 +291,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(230, 308);
+            this.pictureBox2.Location = new System.Drawing.Point(233, 304);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 39);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
             // 

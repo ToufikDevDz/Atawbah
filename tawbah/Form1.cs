@@ -36,7 +36,6 @@ namespace tawbah
            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
            catch { }
 
-
             //LinqBridge.dll التحقق من وجود الملف 
             if (!File.Exists("LinqBridge.dll"))
             {
@@ -94,7 +93,6 @@ namespace tawbah
         private void Form1_Load(object sender, EventArgs e)
         {
             
-
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -397,5 +395,6 @@ namespace tawbah
         {
         }
 
+  
     }
 }
