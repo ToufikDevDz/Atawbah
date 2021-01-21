@@ -19,7 +19,7 @@ namespace tawbah.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -92,10 +92,10 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red255\green112\blue43;\red0\green176\blue80;\red0\green128\blue0;\red128\green64\blue0;}
+        ///{\colortbl ;\red255\green110\blue50;\red0\green176\blue80;\red192\green80\blue77;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\b\f0\rtlch\fs36\&apos;d4\&apos;df\&apos;d1:\par
-        ///\cf2\ulnone\b0\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 \&apos;da\&apos;d2\&apos;f8 \&apos;e6\&apos;cc\&apos;e1\&apos;f8 \b [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\sa200\sl240\slmult1\qc\cf1\ul\f0\rtlch\fs36\&apos;d4\&apos;df\&apos;d1:\par
+        ///\cf2\ulnone\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 \&apos;da\&apos;d2\&apos;f8 \&apos;e6\&apos;cc\&apos;e1\&apos;f8 \b0\&apos;c7\&apos;e1\&apos;f8\&apos;d0\&apos;ed \&apos;e [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string chokr1 {
             get {
@@ -197,8 +197,8 @@ namespace tawbah.Properties {
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
         ///{\colortbl ;\red255\green128\blue0;\red192\green80\blue77;\red0\green176\blue80;\red240\green120\blue0;\red128\green64\blue0;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\b\f0\rtlch\fs36\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5:\par
-        ///\cf2\ulnone\b0\fs28\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf3\ul\b\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\cf0\ulnone [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\f0\rtlch\fs36\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5:\par
+        ///\cf2\ulnone\fs32\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf3\ul\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\cf0\ulnone\fs36\p [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string License1 {
             get {
@@ -279,6 +279,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lighttahdith {
+            get {
+                object obj = ResourceManager.GetObject("lighttahdith", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mawqi {
             get {
                 object obj = ResourceManager.GetObject("mawqi", resourceCulture);
@@ -287,25 +297,48 @@ namespace tawbah.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to #Anti-Porn hosts file # twbh
-        ///#Free List By 4skinSkywalker : https://github.com/4skinSkywalker/anti-porn-hosts-file # twbh
-        ///0.0.0.0 0.nextyourcontent.com # twbh
-        ///0.0.0.0 000free.us # twbh
-        ///0.0.0.0 0013langford.tumblr.com # twbh
-        ///0.0.0.0 007angels.com # twbh
-        ///0.0.0.0 00webcams.com # twbh
-        ///0.0.0.0 03p.info # twbh
-        ///0.0.0.0 0427d7.se # twbh
-        ///0.0.0.0 0532a9.r.axf8.net # twbh
-        ///0.0.0.0 05tz2e9.com # twbh
-        ///0.0.0.0 064bdf.r.axf8.net # twbh
-        ///0.0.0.0 07634.com # twbh
-        ///0.0.0.0 0900-telefonerotik.de # twbh
-        ///0.0.0.0 0d72 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to #local host # twbh
+        ///127.0.0.1 localhost # twbh
+        ///127.0.0.1 localhost.localdomain # twbh
+        ///127.0.0.1 local # twbh
+        ///255.255.255.255 broadcasthost # twbh
+        ///::1 localhost # twbh
+        ///::1 ip6-localhost # twbh
+        ///::1 ip6-loopback # twbh
+        ///fe80::1%lo0 localhost # twbh
+        ///ff00::0 ip6-localnet # twbh
+        ///ff00::0 ip6-mcastprefix # twbh
+        ///ff02::1 ip6-allnodes # twbh
+        ///ff02::2 ip6-allrouters # twbh
+        ///ff02::3 ip6-allhosts # twbh
+        ///0.0.0.0 0.0.0.0 # twbh
+        ///#tahaqoq # twbh
+        ///0.0.0.0 lilhajb.blogspot.com # twbh
+        ///0.0.0.0 www.lilhajb.blogspot.co [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string qaimatalmawaqi {
             get {
                 return ResourceManager.GetString("qaimatalmawaqi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tahaqoq {
+            get {
+                object obj = ResourceManager.GetObject("tahaqoq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tahdith {
+            get {
+                object obj = ResourceManager.GetObject("tahdith", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

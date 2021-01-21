@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnhajb = new System.Windows.Forms.PictureBox();
             this.wajiha = new System.Windows.Forms.PictureBox();
@@ -46,9 +47,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tammaawla = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.raqmalisdar = new System.Windows.Forms.PictureBox();
+            this.alisdar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tahdith = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
@@ -56,8 +60,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raqmalisdar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alisdar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tahdith)).BeginInit();
             this.SuspendLayout();
             // 
             // btnhajb
@@ -137,7 +142,7 @@
             this.Akhbar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Akhbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Akhbar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Akhbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Akhbar.ForeColor = System.Drawing.Color.Maroon;
             this.Akhbar.Location = new System.Drawing.Point(200, 424);
             this.Akhbar.Name = "Akhbar";
             this.Akhbar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -222,7 +227,7 @@
             this.raqmalisdarmawqi.AutoSize = true;
             this.raqmalisdarmawqi.Location = new System.Drawing.Point(58, 44);
             this.raqmalisdarmawqi.Name = "raqmalisdarmawqi";
-            this.raqmalisdarmawqi.Size = new System.Drawing.Size(21, 13);
+            this.raqmalisdarmawqi.Size = new System.Drawing.Size(20, 13);
             this.raqmalisdarmawqi.TabIndex = 15;
             this.raqmalisdarmawqi.Text = "ifm";
             this.raqmalisdarmawqi.Visible = false;
@@ -234,7 +239,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "3";
+            this.raqmalisdarfibarnamj.Text = "4";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -252,7 +257,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(99, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 13);
+            this.label3.Size = new System.Drawing.Size(18, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "brj";
             this.label3.Visible = false;
@@ -262,7 +267,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(82, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "tamma";
             this.label4.Visible = false;
@@ -277,25 +282,26 @@
             this.tammaawla.Text = "0";
             this.tammaawla.Visible = false;
             // 
-            // pictureBox1
+            // raqmalisdar
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.adadalmawaqi;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(268, 353);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 29);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.raqmalisdar.BackgroundImage = global::tawbah.Properties.Resources.adadalmawaqi;
+            this.raqmalisdar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.raqmalisdar.Location = new System.Drawing.Point(270, 357);
+            this.raqmalisdar.Name = "raqmalisdar";
+            this.raqmalisdar.Size = new System.Drawing.Size(109, 48);
+            this.raqmalisdar.TabIndex = 21;
+            this.raqmalisdar.TabStop = false;
+            this.raqmalisdar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // alisdar
             // 
-            this.pictureBox2.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(233, 304);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 39);
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
+            this.alisdar.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
+            this.alisdar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.alisdar.Location = new System.Drawing.Point(234, 303);
+            this.alisdar.Name = "alisdar";
+            this.alisdar.Size = new System.Drawing.Size(106, 52);
+            this.alisdar.TabIndex = 22;
+            this.alisdar.TabStop = false;
             // 
             // label1
             // 
@@ -310,15 +316,45 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             // 
+            // tahdith
+            // 
+            this.tahdith.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tahdith.BackgroundImage = global::tawbah.Properties.Resources.tahdith;
+            this.tahdith.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tahdith.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tahdith.Location = new System.Drawing.Point(299, 317);
+            this.tahdith.Margin = new System.Windows.Forms.Padding(0);
+            this.tahdith.Name = "tahdith";
+            this.tahdith.Size = new System.Drawing.Size(27, 26);
+            this.tahdith.TabIndex = 24;
+            this.tahdith.TabStop = false;
+            this.toolTip1.SetToolTip(this.tahdith, "التحقق من وجود إصدار جديد");
+            this.tahdith.Click += new System.EventHandler(this.tahdith_Click);
+            this.tahdith.MouseEnter += new System.EventHandler(this.tahdith_MouseEnter);
+            this.tahdith.MouseLeave += new System.EventHandler(this.tahdith_MouseLeave);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(60, 145);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 43);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "تجريب\r\nFlushDNS ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(609, 477);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tahdith);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.alisdar);
+            this.Controls.Add(this.raqmalisdar);
             this.Controls.Add(this.tammaawla);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -352,8 +388,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.raqmalisdar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alisdar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tahdith)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,9 +415,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label tammaawla;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox raqmalisdar;
+        private System.Windows.Forms.PictureBox alisdar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox tahdith;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

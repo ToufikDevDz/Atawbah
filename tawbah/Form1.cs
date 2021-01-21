@@ -17,7 +17,7 @@ namespace tawbah
            try
            {
               WebClient web1 = new WebClient();
-              Stream stream1 = web1.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/raqmalisdar");
+              Stream stream1 = web1.OpenRead("https://pastebin.com/raw/RJCWm0x3");
               using (StreamReader reader = new StreamReader(stream1))
               {
                  String textakhiralisdarfilmawqii = reader.ReadToEnd();
@@ -47,16 +47,17 @@ namespace tawbah
             try
             {
                 WebClient web2 = new WebClient();
-                Stream stream2 = web2.OpenRead("https://raw.githubusercontent.com/ToufikDevDz/Tawbah/master/akhabr");
-                using (StreamReader reader = new StreamReader(stream2))
+                Stream stream2 = web2.OpenRead("https://pastebin.com/raw/zXugwVBD");
+                using (StreamReader reader2 = new StreamReader(stream2))
                 {
-                    String text = reader.ReadToEnd();
-                    Akhbar.Text = text;
+                    String text1 = reader2.ReadToEnd();
+                    Akhbar.Text = text1;
                 }
             }
 
             //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
             catch { }
+
 
             //Alt+F4 من الأمور الخاصة بتعطيل 
             this.KeyPreview = true;
@@ -207,7 +208,7 @@ namespace tawbah
                 if (!File.Exists(pathhosts))
                 {
                     //إنشاء الملف إذا لم يكن موجودا
-                    using (StreamWriter w = File.AppendText(pathhosts)) ;
+                    using (StreamWriter w = File.AppendText(pathhosts));
                     goto starthajb;
                 }
 
@@ -246,6 +247,16 @@ namespace tawbah
 
                 //تنشيط السمة للقراءة فقط
                 hostsnfo.IsReadOnly = true;
+
+                //Flush DNS
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+                startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfo.FileName = "cmd.exe";
+                startInfo.Arguments = "/C ipconfig /flushdns";
+                startInfo.Verb = "runas";
+                process.StartInfo = startInfo;
+                process.Start();
             }
 
             catch (Exception k)
@@ -395,6 +406,66 @@ namespace tawbah
         {
         }
 
-  
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tahdith_Click(object sender, EventArgs e)
+        {
+            //التحقق من وجود إصدار جديد
+            try
+            {
+                WebClient web1 = new WebClient();
+                Stream stream1 = web1.OpenRead("https://pastebin.com/raw/RJCWm0x3");
+                using (StreamReader reader = new StreamReader(stream1))
+                {
+                    String textakhiralisdarfilmawqii = reader.ReadToEnd();
+                    raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
+                    var mwq = Convert.ToInt32(raqmalisdarmawqi.Text);
+                    var brn = Convert.ToInt32(raqmalisdarfibarnamj.Text);
+                    //في حالة وجود إصدار جديد
+                    if (mwq > brn)
+                    {
+                        //فتح نافذة إصدار جديد
+                        Form isdarjadid = new Form5();
+                        isdarjadid.ShowDialog();
+                    }
+                    //في حالة عدم ود إصدار جديد
+                    else
+                    {
+                        //فتح نافذة أنت تملك إصدار جديد
+                        Form isdarjadid = new Form6();
+                        isdarjadid.ShowDialog();
+                    }
+                }
+            }
+
+            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
+            catch { }
+        }
+
+        private void tahdith_MouseEnter(object sender, EventArgs e)
+        {
+            tahdith.BackgroundImage = Properties.Resources.lighttahdith;
+        }
+
+        private void tahdith_MouseLeave(object sender, EventArgs e)
+        {
+            tahdith.BackgroundImage = Properties.Resources.tahdith;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Flush DNS
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C ipconfig /flushdns";
+            startInfo.Verb = "runas";
+            process.StartInfo = startInfo;
+            process.Start();
+        }
     }
 }

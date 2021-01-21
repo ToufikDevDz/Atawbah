@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lighthajb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lighthajb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lighthawla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lighthawla.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="license" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\license.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +130,8 @@
   <data name="hawla" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hawla.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qaimatalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qaimatalmawaqi.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1256</value>
+  <data name="tahmil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tahmil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lightmawqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightmawqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,14 +145,17 @@
   <data name="License1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\License.rtf;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1256</value>
   </data>
-  <data name="lighthawla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lighthawla.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lighttahdith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lighttahdith.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iblagh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iblagh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hajb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hajb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tahdith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tahdith.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tahmillight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tahmillight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +166,8 @@
   <data name="khorodj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khorodj.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="taqdum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="adadalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adadalmawaqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chokr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chokr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,23 +175,26 @@
   <data name="isbir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isbir.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mawqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mawqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="qaimatalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qaimatalmawaqi.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1256</value>
   </data>
   <data name="lightkhorodj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightkhorodj.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="adadalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adadalmawaqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="taqdum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="isdarjadid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isdarjadid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alisdar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alisdar1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lightiblagh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightiblagh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tahmil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tahmil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lighthajb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lighthajb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +205,11 @@
   <data name="wajiha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wajiha.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mawqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mawqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="alisdar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\alisdar1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tahaqoq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tahaqoq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
