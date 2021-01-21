@@ -126,6 +126,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap halmoqtarah {
+            get {
+                object obj = ResourceManager.GetObject("halmoqtarah", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hawla {
             get {
                 object obj = ResourceManager.GetObject("hawla", resourceCulture);
@@ -313,8 +323,8 @@ namespace tawbah.Properties {
         ///ff02::3 ip6-allhosts # twbh
         ///0.0.0.0 0.0.0.0 # twbh
         ///#tahaqoq # twbh
-        ///0.0.0.0 lilhajb.blogspot.com # twbh
-        ///0.0.0.0 www.lilhajb.blogspot.co [rest of string was truncated]&quot;;.
+        ///0.0.0.0 lilhajb.blogspot.com www.lilhajb.blogspot.com # twbh
+        ///#mawaq [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string qaimatalmawaqi {
             get {

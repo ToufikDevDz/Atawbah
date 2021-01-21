@@ -74,12 +74,9 @@ namespace tawbah
            hajbdisabled.Visible = false;
            busy.Visible = false;
 
-           //إظهار صفحة الإبلاغ عن الخطأ
-           try
-           {
-               System.Diagnostics.Process.Start("https://forms.gle/cMBi3N1hvzjGmXex9");
-           }
-           catch { }
+            //فتح نافذة الحل المقترح لمشكلة ظهور رسالة خطأ بعد الضغط على زر حجب المواقع
+            //الخطوة الأولى : الانتظار قبل ظهور الرسالة - بدأ المؤقتة
+            timer1.Enabled = true;
         }
 
         //بعد انتهاء عملية التنفيذ
@@ -431,7 +428,7 @@ namespace tawbah
                         Form isdarjadid = new Form5();
                         isdarjadid.ShowDialog();
                     }
-                    //في حالة عدم ود إصدار جديد
+                    //في حالة عدم وجود إصدار جديد
                     else
                     {
                         //فتح نافذة أنت تملك إصدار جديد
@@ -466,6 +463,17 @@ namespace tawbah
             startInfo.Verb = "runas";
             process.StartInfo = startInfo;
             process.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //فتح نافذة الحل المقترح لمشكلة ظهور رسالة خطأ بعد الضغط على زر حجب المواقع
+            //الخطوة الأولى : إظهار النافذة
+            timer1.Stop();
+            Form halmoqtarah = new Form7();
+            Enabled = false;
+            halmoqtarah.ShowDialog();
+            Enabled = true;
         }
     }
 }

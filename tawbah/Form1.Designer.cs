@@ -53,6 +53,7 @@
             this.tahdith = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
@@ -344,6 +345,11 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -421,6 +427,7 @@
         private System.Windows.Forms.PictureBox tahdith;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
