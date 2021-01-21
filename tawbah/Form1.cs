@@ -468,7 +468,7 @@ namespace tawbah
         private void timer1_Tick(object sender, EventArgs e)
         {
             //فتح نافذة الحل المقترح لمشكلة ظهور رسالة خطأ بعد الضغط على زر حجب المواقع
-            //الخطوة الأولى : إظهار النافذة
+            //الخطوة الثانية : إظهار النافذة
             timer1.Stop();
             Form halmoqtarah = new Form7();
             Enabled = false;
