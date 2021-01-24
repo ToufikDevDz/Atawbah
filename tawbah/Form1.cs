@@ -269,8 +269,8 @@ namespace tawbah
                 return;
             }
 
-        //إنتظار 40 ثانية
-        Thread.Sleep(40000);
+        //إنتظار 30 ثانية
+        Thread.Sleep(30000);
 
         //بعد إنتهاء عملية حجب المواقع
         intihaa();
