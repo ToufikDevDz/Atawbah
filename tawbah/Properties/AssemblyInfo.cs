@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("برنامج التّوبة")]
 [assembly: AssemblyDescription("برنامج مجّانيّ لحجب المواقع الخليعة الخبيثة")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("توفيق أبو عبد الوهّاب وبعض الإخوة جزاهم الله خيرًا")]
+[assembly: AssemblyCompany("مجموعة من الإخوة جزاهم الله خيرًا")]
 [assembly: AssemblyProduct("برنامج التّوبة")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
