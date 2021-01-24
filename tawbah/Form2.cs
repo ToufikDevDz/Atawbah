@@ -31,5 +31,38 @@ namespace tawbah
             khorodj.BackgroundImage = Properties.Resources.khorodj;
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            //غلق بعض النوافذ الأخرى
+            try
+            {
+                Application.OpenForms["Form3"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form4"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form5"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form6"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form7"].Close();
+            }
+            catch { }
+        }
     }
 }

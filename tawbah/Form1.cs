@@ -159,9 +159,14 @@ namespace tawbah
                 }
                 else
                 {
-                //إذا كان الملف موجودا تظهر رسالة تم بإذن الله
-                Form tammaform = new Form2();
-                tammaform.ShowDialog();
+                   //إذا كان الملف موجودا تظهر رسالة تم بإذن الله
+
+                   //غلق النوافذ الأخرى
+                   //jari
+
+                   //ظهور رسالة تم بإذن الله
+                   Form tammaform = new Form2();
+                   tammaform.ShowDialog();
                 }
             }
 

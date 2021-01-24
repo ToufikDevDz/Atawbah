@@ -78,6 +78,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تمّ حجب المواقع";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.khorodj)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamma)).EndInit();
             this.ResumeLayout(false);

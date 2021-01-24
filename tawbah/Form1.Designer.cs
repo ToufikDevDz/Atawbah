@@ -144,12 +144,12 @@
             this.Akhbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Akhbar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Akhbar.ForeColor = System.Drawing.Color.Maroon;
-            this.Akhbar.Location = new System.Drawing.Point(200, 424);
+            this.Akhbar.Location = new System.Drawing.Point(200, 425);
             this.Akhbar.Name = "Akhbar";
             this.Akhbar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Akhbar.Size = new System.Drawing.Size(209, 15);
+            this.Akhbar.Size = new System.Drawing.Size(209, 14);
             this.Akhbar.TabIndex = 5;
-            this.Akhbar.Text = "أخبار البرنامج (تعذّر الإتّصال بالخادم)";
+            this.Akhbar.Text = "اعلم أنَّ الله يسمعك ويراك";
             this.Akhbar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Akhbar.Click += new System.EventHandler(this.Akhbar_Click);
             // 
@@ -161,9 +161,9 @@
             this.itaralakhbar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.itaralakhbar.BackgroundImage = global::tawbah.Properties.Resources.frame;
             this.itaralakhbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.itaralakhbar.Location = new System.Drawing.Point(196, 419);
+            this.itaralakhbar.Location = new System.Drawing.Point(196, 420);
             this.itaralakhbar.Name = "itaralakhbar";
-            this.itaralakhbar.Size = new System.Drawing.Size(219, 25);
+            this.itaralakhbar.Size = new System.Drawing.Size(219, 24);
             this.itaralakhbar.TabIndex = 6;
             this.itaralakhbar.TabStop = false;
             // 

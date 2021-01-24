@@ -40,5 +40,39 @@ namespace tawbah
         {
             iblagh.BackgroundImage = Properties.Resources.iblagh;
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            //غلق بعض النوافذ الأخرى
+            try
+            {
+                Application.OpenForms["Form2"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form3"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form4"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form5"].Close();
+            }
+            catch { }
+
+            try
+            {
+                Application.OpenForms["Form6"].Close();
+            }
+            catch { }
+        }
     }
 }
