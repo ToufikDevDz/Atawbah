@@ -36,27 +36,7 @@ namespace tawbah
         {
             chokr.BackgroundImage = Properties.Resources.chokr;
         }
-        private void license_Click(object sender, EventArgs e)
-        {
-            //تأثير عند الضغط
-            licensebtn.BackgroundImage = Properties.Resources.license;
-            licensebtn.Refresh();
-            Thread.Sleep(100);
-            licensebtn.BackgroundImage = Properties.Resources.lightlicense;
 
-            //إظهار نص الترخيص
-            this.nass.Text = "";
-            this.nass.SelectedRtf = Properties.Resources.License1;
-            this.nass.SelectionStart = 0;
-        }
-        private void licensebtn_MouseEnter(object sender, EventArgs e)
-        {
-            licensebtn.BackgroundImage = Properties.Resources.lightlicense;
-        }
-        private void license_MouseLeave(object sender, EventArgs e)
-        {
-            licensebtn.BackgroundImage = Properties.Resources.license;
-        }
         private void iblagh_Click(object sender, EventArgs e)
         {
             //تأثير عند الضغط على الزر
@@ -68,7 +48,7 @@ namespace tawbah
             //فتح صفحة الإبلاغ عن الخطأ
             try
             {
-               System.Diagnostics.Process.Start("https://forms.gle/raB5SwrJ68bPczzb9");
+               System.Diagnostics.Process.Start("https://bit.ly/iblagh-at");
             }
             catch { }
         }     
@@ -82,18 +62,51 @@ namespace tawbah
         }
         private void nass_Enter(object sender, EventArgs e)
         {
-            //بإذن الله beam هذا يساعد على حجب
+            //هذا يساعد على حجب مؤشر الكتابة بإذن الله
             label2.Focus();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void soalwajawab_MouseEnter(object sender, EventArgs e)
         {
-
+            soalwajawab.BackgroundImage = Properties.Resources.lightsoalwajawab;
         }
 
-        private void nass_TextChanged(object sender, EventArgs e)
+        private void soalwajawab_MouseLeave(object sender, EventArgs e)
+        {
+            soalwajawab.BackgroundImage = Properties.Resources.soalwajawab;
+        }
+
+        private void soalwajawab_Click(object sender, EventArgs e)
+        {
+            //إظهارالأسئلة والأجوبة          
+            this.nass.Text = "";
+            this.nass.SelectedRtf = Properties.Resources.nassasilawaajwiba;
+            this.nass.SelectionStart = 0;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+            //إظهار نص الترخيص
+            this.nass.Text = "";
+            this.nass.SelectedRtf = Properties.Resources.License1;
+            this.nass.SelectionStart = 0;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //فتح صفحة شرح البرنامج
+            try
+            {
+                System.Diagnostics.Process.Start("https://bit.ly/asharh-at");
+            }
+            catch { }
+        }
+
+        private void nass_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            //فتح الروابط
+            System.Diagnostics.Process.Start(e.LinkText);
         }
     }
 }

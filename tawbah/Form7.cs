@@ -27,7 +27,7 @@ namespace tawbah
             //فتح صفحة الإبلاغ عن الخطأ
             try
             {
-                System.Diagnostics.Process.Start("https://forms.gle/raB5SwrJ68bPczzb9");
+                System.Diagnostics.Process.Start("https://bit.ly/iblagh-at");
             }
             catch { }
         }

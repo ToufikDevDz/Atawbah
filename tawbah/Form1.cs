@@ -36,35 +36,43 @@ namespace tawbah
            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
            catch { }
 
-            //LinqBridge.dll التحقق من وجود الملف 
-            if (!File.Exists("LinqBridge.dll"))
-            {
-                MessageBox.Show("ينقص الملف LinqBridge.dll، قم بإعادة تحميل البرنامج من موقعه الرسمي.", "حدث خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                Application.Exit();
-            }
+           //LinqBridge.dll التحقق من وجود الملف 
+           if (!File.Exists("LinqBridge.dll"))
+           {
+               MessageBox.Show("ينقص الملف LinqBridge.dll، قم بإعادة تحميل البرنامج من موقعه الرسمي.", "حدث خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+               Application.Exit();
+           }
 
-            //آخر الأخبار
+           //آخر الأخبار
             try
-            {
-                WebClient web2 = new WebClient();
-                Stream stream2 = web2.OpenRead("https://pastebin.com/raw/zXugwVBD");
-                using (StreamReader reader2 = new StreamReader(stream2))
-                {
-                    String text1 = reader2.ReadToEnd();
-                    Akhbar.Text = text1;
-                }
-            }
+           {
+               WebClient web2 = new WebClient();
+               Stream stream2 = web2.OpenRead("https://pastebin.com/raw/zXugwVBD");
+               using (StreamReader reader2 = new StreamReader(stream2))
+               {
+                   String text1 = reader2.ReadToEnd();
+                   Akhbar.Text = text1;
+               }
+           }
+        
+           //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
+           catch { }
 
-            //لمنع ظهور رسالة الخطأ أثناء تعذر الإتصال بالخادم
-            catch { }
 
-
-            //Alt+F4 من الأمور الخاصة بتعطيل 
-            this.KeyPreview = true;
+           //Alt+F4 من الأمور الخاصة بتعطيل 
+           this.KeyPreview = true;
         }
 
         //hosts موقع الملف 
         string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
+
+        //ما يحدث للواجهة أثناء عملية التنفيذ
+        public void intidhar()
+        {
+            this.ControlBox = false;
+            hajbdisabled.Visible = true;
+            busy.Visible = true;
+        }
 
         //إذا حدث خطأ أثناء عملية التنفيذ
         public void khataafitanfid()
@@ -88,11 +96,6 @@ namespace tawbah
            busy.Visible = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             //Alt+f4 تعطيل
@@ -101,33 +104,84 @@ namespace tawbah
                 e.Handled = true;
             }
 
-            //Ctrl + L حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية بالضغط على الأزرار
-            if (e.Control && e.KeyCode == Keys.L)
+            //Ctrl + B حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية بالضغط على الأزرار
+            if (e.Control && e.KeyCode == Keys.B)
             {
-                if (!backgroundWorker1.IsBusy)
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
                 {
-                    if (backgroundWorker2.IsBusy)
-                    {
-                        MessageBox.Show("يرجى إعادة المحاولة مرّة أخرى.", "نصيحة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                    }
+                    var debug1 = MessageBox.Show("هل تريد إستعادة الملف hosts إلى حالته الأصليّة؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
 
-                    else
+                    if (debug1 == DialogResult.Yes)
                     {
-                        var debug1 = MessageBox.Show("هل تريد إسنعادة الملف hosts إلى حالته الأصليّة؟", "حدث خطأ", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-
-                        if (debug1 == DialogResult.Yes)
-                        {
-                            this.ControlBox = false;
-                            hajbdisabled.Visible = true;
-                            busy.Visible = true;
-                            backgroundWorker2.RunWorkerAsync();
-                        }
+                        intidhar();
+                        backgroundWorker2.RunWorkerAsync();
                     }
                 }
 
                 else
                 {
-                    MessageBox.Show("يرجى إعادة المحاولة بعد إنتهاء عمليّة حجب المواقع.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                }
+            }
+
+
+            //Ctrl + M حدث خطأ؟ يمكن إلغاء حجب بعض محرّكات البحث (التي لم يتمكن البرنامج من فرض ميزة الوضع الآمن فيها) (مثل ياهو ويندكس...) بالضغط على الأزرار
+            if (e.Control && e.KeyCode == Keys.M)
+            {
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
+                {
+                     var debug2 = MessageBox.Show("هل تريد إلغاء حجب بعض محرّكات البحث؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+
+                     if (debug2 == DialogResult.Yes)
+                     {
+                         intidhar();
+                         backgroundWorker3.RunWorkerAsync();
+                     }                  
+                }
+
+                else
+                {
+                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                }
+            }
+
+            //Ctrl + Y  إلغاء فرض ميزة وضع تقييد المحتوى لليوتيوب بالضغط على الأزرار
+            if (e.Control && e.KeyCode == Keys.Y)
+            {
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
+                {
+                    var debug3 = MessageBox.Show("هل تريد إلغاء فرض ميزة وضع تقييد المحتوى لليوتيوب؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+
+                    if (debug3 == DialogResult.Yes)
+                    {
+                        intidhar();
+                        backgroundWorker4.RunWorkerAsync();
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                }
+            }
+
+            //Ctrl + G إلغاء فرض ميزة البحث الآمن لمحركات البحث جوجل وبنج بالضغط على الأزرار
+            if (e.Control && e.KeyCode == Keys.G)
+            {
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
+                {
+                    var debug4 = MessageBox.Show("هل تريد إلغاء فرض ميزة البحث الآمن لمحركات البحث Google وBing؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+
+                    if (debug4 == DialogResult.Yes)
+                    {
+                        intidhar();
+                        backgroundWorker5.RunWorkerAsync();
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
                 }
             }
         }
@@ -173,11 +227,9 @@ namespace tawbah
             if (tma == 0)
             {
                 //التنفيذ
-                if (!backgroundWorker1.IsBusy)
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
                 {
-                    this.ControlBox = false;
-                    hajbdisabled.Visible = true;
-                    busy.Visible = true;
+                    intidhar();
                     backgroundWorker1.RunWorkerAsync();
                 }
             }
@@ -195,17 +247,24 @@ namespace tawbah
 
         private void hajbdisabled_Click(object sender, EventArgs e)
         {
-            //فتح نافذة حول البرنامج
-            Form isbirform = new Form4();
-            isbirform.ShowDialog();
+            //فتح نافذة اصبر جاري عملية حجب المواقع
+            //تظهر أثناء عملية الحجب فقط
+            if (backgroundWorker1.IsBusy)
+            {
+                Form isbirform = new Form4();
+                isbirform.ShowDialog();
+            }
+            if (!backgroundWorker1.IsBusy)
+            {
+                MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            }
+
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-
             try
             {
-
                 //التحقق من وجود الملف
                 if (!File.Exists(pathhosts))
                 {
@@ -215,7 +274,7 @@ namespace tawbah
                 }
 
                 starthajb:
-                //إلغاء السمة للقراءة فقط والسمات الأخرى
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
                 FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
@@ -233,9 +292,9 @@ namespace tawbah
                         n += old + Environment.NewLine;
                     }
                 }
+
                 sr.Close();
                 File.WriteAllText(pathhosts, n);
-
 
                 //hosts إضافة السطور إلى الملف 
                 using (StreamWriter sw = File.AppendText(pathhosts))
@@ -278,6 +337,7 @@ namespace tawbah
         //async إيقاف
         backgroundWorker1.CancelAsync();
 
+
         //إظهار رسالة تم
         Form tammaform = new Form2();
         tammaform.ShowDialog();
@@ -297,7 +357,7 @@ namespace tawbah
         {
 
            try { 
-           //إلغاء السمة للقراءة فقط والسمات الأخرى
+           //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
            FileInfo hostsnfo = new FileInfo(pathhosts);   
            File.SetAttributes(pathhosts, FileAttributes.Normal);
  
@@ -309,17 +369,17 @@ namespace tawbah
            string n = "";
            StreamReader sr = File.OpenText(pathhosts);
 
-              while ((old = sr.ReadLine()) != null)
-              {
-                 if (!old.Contains(search_text))
-                 {
-                    n += old + Environment.NewLine;
-                 }
-              }
+                while ((old = sr.ReadLine()) != null)
+                {
+                    if (!old.Contains(search_text))
+                    {
+                        n += old + Environment.NewLine;
+                    }
+                }
 
-           sr.Close();
-           File.WriteAllText(pathhosts, n);
-            
+                sr.Close();
+                File.WriteAllText(pathhosts, n);
+        
            //تنشيط السمة للقراءة فقط
            FileInfo hostsnfo2 = new FileInfo(pathhosts);
            hostsnfo2.IsReadOnly = true;
@@ -329,7 +389,7 @@ namespace tawbah
            {
                khataafitanfid();
                MessageBox.Show(k2.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-               MessageBox.Show("لم يتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+               MessageBox.Show("لم تتمّ إستعادة الملف hosts إلى حالته الأصليّة، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
                return;
            }
 
@@ -339,12 +399,14 @@ namespace tawbah
            //بعد إنتهاء عملية استعادة الملف إلى حالته الأصلية
            intihaa();
 
+           //يمكن حجب المواقع مرة أخرى
+           tammaawla.Text = "0";
+
            //async إيقاف
-           backgroundWorker1.CancelAsync();
+           backgroundWorker2.CancelAsync();
 
            //إظهار رسالة تم
-           MessageBox.Show("تمّ إستعادة الملف hosts إلى حالته الأصليّة.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-           backgroundWorker2.CancelAsync();
+           MessageBox.Show("تمّت إستعادة الملف hosts إلى حالته الأصليّة.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
         }
 
         private void backgroundWorker2_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -384,14 +446,10 @@ namespace tawbah
         {
             //تأثير عند الضغط
             hawla.BackgroundImage = Properties.Resources.hawla;
-            hawla.Refresh();
-            Thread.Sleep(100);
-            hawla.BackgroundImage = Properties.Resources.lighthawla;
 
             //فتح نافذة حول البرنامج
             Form hawlaform = new Form3();
             hawlaform.ShowDialog();
-
         }
 
         private void hawla_MouseEnter(object sender, EventArgs e)
@@ -404,23 +462,14 @@ namespace tawbah
             hawla.BackgroundImage = Properties.Resources.hawla;
         }
 
-        private void Akhbar_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tahdith_Click(object sender, EventArgs e)
         {
             //التحقق من وجود إصدار جديد
             try
             {
-                WebClient web1 = new WebClient();
-                Stream stream1 = web1.OpenRead("https://pastebin.com/raw/RJCWm0x3");
-                using (StreamReader reader = new StreamReader(stream1))
+                WebClient web3 = new WebClient();
+                Stream stream3 = web3.OpenRead("https://pastebin.com/raw/RJCWm0x3");
+                using (StreamReader reader = new StreamReader(stream3))
                 {
                     String textakhiralisdarfilmawqii = reader.ReadToEnd();
                     raqmalisdarmawqi.Text = textakhiralisdarfilmawqii;
@@ -479,6 +528,201 @@ namespace tawbah
             Enabled = false;
             halmoqtarah.ShowDialog();
             Enabled = true;
+        }
+
+        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //إلغاء حجب بعض محرّكات البحث التي لم يتمكن البرنامج من فرض ميزة البحث الآمن عليها
+            try
+            {
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
+                FileInfo hostsnfo = new FileInfo(pathhosts);
+                File.SetAttributes(pathhosts, FileAttributes.Normal);
+
+
+                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+                //twbhmhrk حذف السطور التي تحتوي على كلمة
+                string search_text = "twbhmhrk";
+                string old;
+                string n = "";
+                StreamReader sr = File.OpenText(pathhosts);
+
+                while ((old = sr.ReadLine()) != null)
+                {
+                    if (!old.Contains(search_text))
+                    {
+                        n += old + Environment.NewLine;
+                    }
+                }
+
+                sr.Close();
+                File.WriteAllText(pathhosts, n);
+
+                //تنشيط السمة للقراءة فقط
+                FileInfo hostsnfo3 = new FileInfo(pathhosts);
+                hostsnfo3.IsReadOnly = true;
+            }
+
+            catch (Exception k3)
+            {
+                khataafitanfid();
+                MessageBox.Show(k3.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("لم يتمّ إلغاء حجب محرّكات البحث، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                return;
+            }
+
+            //إنتظار 10 ثواني
+            Thread.Sleep(10000);
+
+            //بعد إنتهاء عملية إلغاء حجب بعض محركات البحث
+            intihaa();
+
+            //يمكن حجب المواقع مرة أخرى
+            tammaawla.Text = "0";
+
+            //async إيقاف
+            backgroundWorker3.CancelAsync();
+
+            //إظهار رسالة تم
+            MessageBox.Show("تمّ إلغاء حجب محرّكات البحث.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+        }
+
+        private void backgroundWorker3_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            intihaa();
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //إلغاء فرض ميزة "وضع تقييد المحتوى" لليوتيوب
+            try
+            {
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
+                FileInfo hostsnfo = new FileInfo(pathhosts);
+                File.SetAttributes(pathhosts, FileAttributes.Normal);
+
+
+                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+                //twbhytb حذف السطور التي تحتوي على كلمة
+                string search_text = "twbhytb";
+                string old;
+                string n = "";
+                StreamReader sr = File.OpenText(pathhosts);
+
+                while ((old = sr.ReadLine()) != null)
+                {
+                    if (!old.Contains(search_text))
+                    {
+                        n += old + Environment.NewLine;
+                    }
+                }
+
+                sr.Close();
+                File.WriteAllText(pathhosts, n);
+
+                //تنشيط السمة للقراءة فقط
+                FileInfo hostsnfo4 = new FileInfo(pathhosts);
+                hostsnfo4.IsReadOnly = true;
+            }
+
+            catch (Exception k4)
+            {
+                khataafitanfid();
+                MessageBox.Show(k4.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("لم يتمّ إلغاء فرض ميزة وضع تقييد المحتوى لليوتيوب، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                return;
+            }
+
+            //إنتظار 10 ثواني
+            Thread.Sleep(10000);
+
+            //بعد إنتهاء عملية إلغاء فرض ميزة وضع تقييد المحتوى لليوتيوب
+            intihaa();
+
+            //يمكن حجب المواقع مرة أخرى
+            tammaawla.Text = "0";
+
+            //async إيقاف
+            backgroundWorker4.CancelAsync();
+
+            //إظهار رسالة تم
+            MessageBox.Show("تمّ إلغاء فرض ميزة وضع تقييد المحتوى لليوتيوب.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+        }
+
+        private void backgroundWorker4_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            intihaa();
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void backgroundWorker5_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //إلغاء فرض ميزة البحث الآمن لمحركات البحث جوجل وبنج
+            try
+            {
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
+                FileInfo hostsnfo = new FileInfo(pathhosts);
+                File.SetAttributes(pathhosts, FileAttributes.Normal);
+
+
+                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
+                //twbhamn حذف السطور التي تحتوي على كلمة
+                string search_text = "twbhamn";
+                string old;
+                string n = "";
+                StreamReader sr = File.OpenText(pathhosts);
+
+                while ((old = sr.ReadLine()) != null)
+                {
+                    if (!old.Contains(search_text))
+                    {
+                        n += old + Environment.NewLine;
+                    }
+                }
+
+                sr.Close();
+                File.WriteAllText(pathhosts, n);
+
+                //تنشيط السمة للقراءة فقط
+                FileInfo hostsnfo5 = new FileInfo(pathhosts);
+                hostsnfo5.IsReadOnly = true;
+            }
+
+            catch (Exception k5)
+            {
+                khataafitanfid();
+                MessageBox.Show(k5.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("لم يتمّ إلغاء فرض ميزة البحث الآمن لمحرّكات البحث Google وBing، حاول مرّة أخرى.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                return;
+            }
+
+            //إنتظار 10 ثواني
+            Thread.Sleep(10000);
+
+            //بعد إنتهاء عملية إلغاء فرض ميزة البحث الآمن لمحركات البحث جوجل وبنج
+            intihaa();
+
+            //يمكن حجب المواقع مرة أخرى
+            tammaawla.Text = "0";
+
+            //async إيقاف
+            backgroundWorker5.CancelAsync();
+
+            //إظهار رسالة تم
+            MessageBox.Show("تمّ إلغاء فرض ميزة البحث الآمن لمحرّكات البحث Google وBing.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+        }
+
+        private void backgroundWorker5_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            intihaa();
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form hal = new Form2();
+            hal.ShowDialog();
         }
     }
 }

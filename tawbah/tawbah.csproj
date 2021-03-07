@@ -208,6 +208,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\nassasilawaajwiba.rtf" />
+    <None Include="Resources\nassiblagh.rtf" />
+    <None Include="Resources\nastahaqoq.rtf" />
     <None Include="tawbah_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -238,6 +241,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aycona.ico" />
+    <None Include="Resources\soalwajawab.png" />
+    <None Include="Resources\lightsoalwajawab.png" />
+    <None Include="Resources\tahaqoqnajah.png" />
+    <None Include="Resources\lighttahaqoqnajah.png" />
+    <None Include="Resources\lighttahaqoq.png" />
     <None Include="Resources\halmoqtarah.png" />
     <None Include="Resources\tahaqoq.png" />
     <None Include="Resources\lighttahdith.png" />

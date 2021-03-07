@@ -9,7 +9,6 @@ namespace tawbah
         public Form4()
         {
             InitializeComponent();
-
         }
 
         private void tick(object sender, EventArgs e)

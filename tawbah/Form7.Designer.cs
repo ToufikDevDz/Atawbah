@@ -49,11 +49,11 @@
             // 
             this.iblagh.BackColor = System.Drawing.Color.White;
             this.iblagh.BackgroundImage = global::tawbah.Properties.Resources.iblagh;
-            this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iblagh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iblagh.Location = new System.Drawing.Point(361, 226);
+            this.iblagh.Location = new System.Drawing.Point(252, 221);
             this.iblagh.Name = "iblagh";
-            this.iblagh.Size = new System.Drawing.Size(154, 50);
+            this.iblagh.Size = new System.Drawing.Size(116, 40);
             this.iblagh.TabIndex = 12;
             this.iblagh.TabStop = false;
             this.iblagh.Click += new System.EventHandler(this.iblagh_Click);
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(550, 342);
+            this.ClientSize = new System.Drawing.Size(550, 287);
             this.Controls.Add(this.iblagh);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

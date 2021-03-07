@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("برنامج التّوبة")]
-[assembly: AssemblyDescription("برنامج مجّانيّ لحجب المواقع الخليعة الخبيثة")]
+[assembly: AssemblyDescription("برنامج مجّانيّ لحجب المواقع الإباحيّة")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("مجموعة من الإخوة جزاهم الله خيرًا")]
 [assembly: AssemblyProduct("برنامج التّوبة")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("4.0.0.0")]
-[assembly: AssemblyFileVersion("4.0.0.0")]
+[assembly: AssemblyVersion("5.0.0.0")]
+[assembly: AssemblyFileVersion("5.0.0.0")]

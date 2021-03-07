@@ -51,9 +51,11 @@
             this.alisdar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tahdith = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
@@ -151,7 +153,6 @@
             this.Akhbar.TabIndex = 5;
             this.Akhbar.Text = "اعلم أنَّ الله يسمعك ويراك";
             this.Akhbar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Akhbar.Click += new System.EventHandler(this.Akhbar_Click);
             // 
             // itaralakhbar
             // 
@@ -216,7 +217,7 @@
             this.Assemby.AutoSize = true;
             this.Assemby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Assemby.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.Assemby.Location = new System.Drawing.Point(164, 27);
+            this.Assemby.Location = new System.Drawing.Point(166, 27);
             this.Assemby.Name = "Assemby";
             this.Assemby.Size = new System.Drawing.Size(281, 13);
             this.Assemby.TabIndex = 14;
@@ -240,7 +241,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "4";
+            this.raqmalisdarfibarnamj.Text = "5";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -292,7 +293,6 @@
             this.raqmalisdar.Size = new System.Drawing.Size(109, 48);
             this.raqmalisdar.TabIndex = 21;
             this.raqmalisdar.TabStop = false;
-            this.raqmalisdar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // alisdar
             // 
@@ -300,7 +300,7 @@
             this.alisdar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.alisdar.Location = new System.Drawing.Point(234, 303);
             this.alisdar.Name = "alisdar";
-            this.alisdar.Size = new System.Drawing.Size(106, 52);
+            this.alisdar.Size = new System.Drawing.Size(132, 52);
             this.alisdar.TabIndex = 22;
             this.alisdar.TabStop = false;
             // 
@@ -323,10 +323,10 @@
             this.tahdith.BackgroundImage = global::tawbah.Properties.Resources.tahdith;
             this.tahdith.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahdith.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahdith.Location = new System.Drawing.Point(299, 317);
+            this.tahdith.Location = new System.Drawing.Point(326, 318);
             this.tahdith.Margin = new System.Windows.Forms.Padding(0);
             this.tahdith.Name = "tahdith";
-            this.tahdith.Size = new System.Drawing.Size(27, 26);
+            this.tahdith.Size = new System.Drawing.Size(24, 24);
             this.tahdith.TabIndex = 24;
             this.tahdith.TabStop = false;
             this.toolTip1.SetToolTip(this.tahdith, "التحقق من وجود إصدار جديد");
@@ -334,21 +334,31 @@
             this.tahdith.MouseEnter += new System.EventHandler(this.tahdith_MouseEnter);
             this.tahdith.MouseLeave += new System.EventHandler(this.tahdith_MouseLeave);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(60, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 43);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "تجريب\r\nFlushDNS ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // timer1
             // 
             this.timer1.Interval = 1500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // backgroundWorker3
+            // 
+            this.backgroundWorker3.WorkerReportsProgress = true;
+            this.backgroundWorker3.WorkerSupportsCancellation = true;
+            this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
+            this.backgroundWorker3.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker3_RunWorkerCompleted);
+            // 
+            // backgroundWorker4
+            // 
+            this.backgroundWorker4.WorkerReportsProgress = true;
+            this.backgroundWorker4.WorkerSupportsCancellation = true;
+            this.backgroundWorker4.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker4_DoWork);
+            this.backgroundWorker4.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker4_RunWorkerCompleted);
+            // 
+            // backgroundWorker5
+            // 
+            this.backgroundWorker5.WorkerReportsProgress = true;
+            this.backgroundWorker5.WorkerSupportsCancellation = true;
+            this.backgroundWorker5.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker5_DoWork);
+            this.backgroundWorker5.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker5_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -356,7 +366,6 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(609, 477);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tahdith);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.alisdar);
@@ -385,7 +394,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "برنامج التّوبة";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).EndInit();
@@ -425,9 +433,11 @@
         private System.Windows.Forms.PictureBox alisdar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox tahdith;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker4;
+        private System.ComponentModel.BackgroundWorker backgroundWorker5;
     }
 }
 
