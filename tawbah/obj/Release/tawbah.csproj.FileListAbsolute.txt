@@ -29,7 +29,6 @@ C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\Atawbah
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\Atawbah.exe
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\Atawbah.pdb
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\LinqBridge.dll
-C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.csprojAssemblyReference.cache
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form1.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form2.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form3.resources
