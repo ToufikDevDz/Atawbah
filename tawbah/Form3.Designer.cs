@@ -101,7 +101,7 @@
             // logosmall
             // 
             this.logosmall.BackColor = System.Drawing.Color.White;
-            this.logosmall.BackgroundImage = global::tawbah.Properties.Resources.itar21;
+            this.logosmall.BackgroundImage = global::tawbah.Properties.Resources.itar211;
             this.logosmall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.logosmall.Location = new System.Drawing.Point(-5, -19);
             this.logosmall.Name = "logosmall";

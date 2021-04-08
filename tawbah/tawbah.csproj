@@ -47,7 +47,8 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>
@@ -70,8 +71,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>tawbah.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>97D06B74CE6AFE8D07B288F75C71ACA54C07ECF0</ManifestCertificateThumbprint>
@@ -102,6 +102,7 @@
     <ManifestTimestampUrl>
     </ManifestTimestampUrl>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -136,12 +137,6 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
@@ -209,7 +201,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Resources\nassasilawaajwiba.rtf" />
-    <None Include="Resources\nassiblagh.rtf" />
     <None Include="Resources\nastahaqoq.rtf" />
     <None Include="tawbah_TemporaryKey.pfx" />
   </ItemGroup>
@@ -219,7 +210,6 @@
   <ItemGroup>
     <None Include="Resources\chokr.rtf" />
     <None Include="Resources\License.rtf" />
-    <None Include="Resources\wajiha.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hajb.png" />
@@ -241,30 +231,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aycona.ico" />
+    <None Include="Resources\tahdithmoatal.png" />
+    <None Include="Resources\mawqimoatal.png" />
+    <None Include="Resources\hawlamoatal.png" />
+    <None Include="Resources\hajbmoatal.png" />
+    <None Include="Resources\itarakhbar.png" />
+    <None Include="Resources\wajiha.jpg" />
+    <None Include="Resources\itar21.jpg" />
+    <None Include="Resources\tamma2.jpg" />
+    <None Include="Resources\tahaqoq.jpg" />
+    <None Include="Resources\isdarjadid.jpg" />
+    <None Include="Resources\isbir.jpg" />
+    <None Include="Resources\halmoqtarah.jpg" />
+    <None Include="Resources\istiadad.gif" />
     <None Include="Resources\soalwajawab.png" />
     <None Include="Resources\lightsoalwajawab.png" />
     <None Include="Resources\tahaqoqnajah.png" />
     <None Include="Resources\lighttahaqoqnajah.png" />
-    <None Include="Resources\lighttahaqoq.png" />
-    <None Include="Resources\halmoqtarah.png" />
-    <None Include="Resources\tahaqoq.png" />
     <None Include="Resources\lighttahdith.png" />
     <None Include="Resources\tahdith.png" />
     <None Include="Resources\alisdar1.png" />
     <None Include="Resources\adadalmawaqi.png" />
-    <None Include="Resources\itar21.png" />
     <None Include="Resources\tahmillight.png" />
     <None Include="Resources\tahmil.png" />
-    <None Include="Resources\isdarjadid.png" />
-    <None Include="Resources\tamma2.png" />
-    <None Include="Resources\isbir.png" />
-    <None Include="Resources\lightlicense.png" />
-    <None Include="Resources\lightkhorodj.png" />
     <None Include="Resources\lightiblagh.png" />
     <None Include="Resources\lightchokr.png" />
-    <None Include="Resources\khorodj.png" />
     <None Include="Resources\iblagh.png" />
-    <None Include="Resources\license.png" />
     <None Include="Resources\chokr.png" />
     <None Include="Resources\ajax-loader.gif" />
     <None Include="Resources\1.png" />

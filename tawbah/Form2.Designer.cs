@@ -39,7 +39,7 @@
             // 
             // tamma
             // 
-            this.tamma.BackgroundImage = global::tawbah.Properties.Resources.tamma2;
+            this.tamma.BackgroundImage = global::tawbah.Properties.Resources.tamma21;
             this.tamma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tamma.Location = new System.Drawing.Point(-3, 8);
             this.tamma.Name = "tamma";
@@ -53,12 +53,12 @@
             this.nass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nass.Cursor = System.Windows.Forms.Cursors.Default;
             this.nass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nass.Location = new System.Drawing.Point(54, 236);
+            this.nass.Location = new System.Drawing.Point(53, 239);
             this.nass.Margin = new System.Windows.Forms.Padding(5);
             this.nass.Name = "nass";
             this.nass.ReadOnly = true;
             this.nass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.nass.Size = new System.Drawing.Size(356, 157);
+            this.nass.Size = new System.Drawing.Size(357, 160);
             this.nass.TabIndex = 14;
             this.nass.Text = "";
             this.nass.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.nass_LinkClicked);
@@ -78,7 +78,7 @@
             this.tahaqoq.BackgroundImage = global::tawbah.Properties.Resources.tahaqoqnajah;
             this.tahaqoq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahaqoq.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahaqoq.Location = new System.Drawing.Point(146, 424);
+            this.tahaqoq.Location = new System.Drawing.Point(146, 420);
             this.tahaqoq.Name = "tahaqoq";
             this.tahaqoq.Size = new System.Drawing.Size(172, 46);
             this.tahaqoq.TabIndex = 17;
@@ -105,7 +105,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "تمّ حجب المواقع";
+            this.Text = "تمّت عمليّة الحجب";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tamma)).EndInit();

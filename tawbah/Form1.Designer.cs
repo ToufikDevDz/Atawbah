@@ -35,7 +35,6 @@
             this.mawqi = new System.Windows.Forms.PictureBox();
             this.hawla = new System.Windows.Forms.PictureBox();
             this.Akhbar = new System.Windows.Forms.Label();
-            this.itaralakhbar = new System.Windows.Forms.PictureBox();
             this.hajbdisabled = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.busy = new System.Windows.Forms.PictureBox();
@@ -56,16 +55,19 @@
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
+            this.itaralakhbar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hawla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.raqmalisdar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alisdar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tahdith)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnhajb
@@ -93,7 +95,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wajiha.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.wajiha.BackgroundImage = global::tawbah.Properties.Resources.wajiha;
+            this.wajiha.BackgroundImage = global::tawbah.Properties.Resources.wajiha1;
             this.wajiha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.wajiha.Location = new System.Drawing.Point(12, 12);
             this.wajiha.Name = "wajiha";
@@ -154,20 +156,6 @@
             this.Akhbar.Text = "اعلم أنَّ الله يسمعك ويراك";
             this.Akhbar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // itaralakhbar
-            // 
-            this.itaralakhbar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.itaralakhbar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.itaralakhbar.BackgroundImage = global::tawbah.Properties.Resources.frame;
-            this.itaralakhbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.itaralakhbar.Location = new System.Drawing.Point(196, 420);
-            this.itaralakhbar.Name = "itaralakhbar";
-            this.itaralakhbar.Size = new System.Drawing.Size(219, 24);
-            this.itaralakhbar.TabIndex = 6;
-            this.itaralakhbar.TabStop = false;
-            // 
             // hajbdisabled
             // 
             this.hajbdisabled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -185,14 +173,12 @@
             this.hajbdisabled.TabStop = false;
             this.hajbdisabled.UseWaitCursor = true;
             this.hajbdisabled.Visible = false;
-            this.hajbdisabled.Click += new System.EventHandler(this.hajbdisabled_Click);
             // 
             // backgroundWorker1
             // 
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // busy
             // 
@@ -210,7 +196,6 @@
             this.backgroundWorker2.WorkerReportsProgress = true;
             this.backgroundWorker2.WorkerSupportsCancellation = true;
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
-            this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
             // 
             // Assemby
             // 
@@ -241,7 +226,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "5";
+            this.raqmalisdarfibarnamj.Text = "6";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -298,9 +283,9 @@
             // 
             this.alisdar.BackgroundImage = global::tawbah.Properties.Resources.alisdar;
             this.alisdar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.alisdar.Location = new System.Drawing.Point(234, 303);
+            this.alisdar.Location = new System.Drawing.Point(231, 303);
             this.alisdar.Name = "alisdar";
-            this.alisdar.Size = new System.Drawing.Size(132, 52);
+            this.alisdar.Size = new System.Drawing.Size(144, 52);
             this.alisdar.TabIndex = 22;
             this.alisdar.TabStop = false;
             // 
@@ -323,7 +308,7 @@
             this.tahdith.BackgroundImage = global::tawbah.Properties.Resources.tahdith;
             this.tahdith.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahdith.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahdith.Location = new System.Drawing.Point(326, 318);
+            this.tahdith.Location = new System.Drawing.Point(331, 318);
             this.tahdith.Margin = new System.Windows.Forms.Padding(0);
             this.tahdith.Name = "tahdith";
             this.tahdith.Size = new System.Drawing.Size(24, 24);
@@ -344,21 +329,38 @@
             this.backgroundWorker3.WorkerReportsProgress = true;
             this.backgroundWorker3.WorkerSupportsCancellation = true;
             this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
-            this.backgroundWorker3.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker3_RunWorkerCompleted);
             // 
             // backgroundWorker4
             // 
             this.backgroundWorker4.WorkerReportsProgress = true;
             this.backgroundWorker4.WorkerSupportsCancellation = true;
             this.backgroundWorker4.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker4_DoWork);
-            this.backgroundWorker4.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker4_RunWorkerCompleted);
             // 
             // backgroundWorker5
             // 
             this.backgroundWorker5.WorkerReportsProgress = true;
             this.backgroundWorker5.WorkerSupportsCancellation = true;
             this.backgroundWorker5.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker5_DoWork);
-            this.backgroundWorker5.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker5_RunWorkerCompleted);
+            // 
+            // itaralakhbar
+            // 
+            this.itaralakhbar.BackgroundImage = global::tawbah.Properties.Resources.itarakhbar;
+            this.itaralakhbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.itaralakhbar.Location = new System.Drawing.Point(196, 420);
+            this.itaralakhbar.Name = "itaralakhbar";
+            this.itaralakhbar.Size = new System.Drawing.Size(219, 24);
+            this.itaralakhbar.TabIndex = 26;
+            this.itaralakhbar.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::tawbah.Properties.Resources.istiadad;
+            this.pictureBox1.Location = new System.Drawing.Point(248, 203);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(113, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -381,9 +383,10 @@
             this.Controls.Add(this.Akhbar);
             this.Controls.Add(this.hawla);
             this.Controls.Add(this.mawqi);
-            this.Controls.Add(this.itaralakhbar);
             this.Controls.Add(this.hajbdisabled);
             this.Controls.Add(this.btnhajb);
+            this.Controls.Add(this.itaralakhbar);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.wajiha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -391,20 +394,22 @@
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "برنامج التّوبة";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.btnhajb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wajiha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mawqi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hawla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hajbdisabled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.busy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.raqmalisdar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alisdar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tahdith)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itaralakhbar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,7 +422,6 @@
         private System.Windows.Forms.PictureBox mawqi;
         private System.Windows.Forms.PictureBox hawla;
         private System.Windows.Forms.Label Akhbar;
-        private System.Windows.Forms.PictureBox itaralakhbar;
         private System.Windows.Forms.PictureBox hajbdisabled;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox busy;
@@ -438,6 +442,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
         private System.ComponentModel.BackgroundWorker backgroundWorker5;
+        private System.Windows.Forms.PictureBox itaralakhbar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

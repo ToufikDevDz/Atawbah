@@ -78,6 +78,12 @@ namespace tawbah
 
         private void soalwajawab_Click(object sender, EventArgs e)
         {
+            //تأثير عند الضغط
+            soalwajawab.BackgroundImage = Properties.Resources.soalwajawab;
+            soalwajawab.Refresh();
+            Thread.Sleep(100);
+            soalwajawab.BackgroundImage = Properties.Resources.lightsoalwajawab;
+
             //إظهارالأسئلة والأجوبة          
             this.nass.Text = "";
             this.nass.SelectedRtf = Properties.Resources.nassasilawaajwiba;

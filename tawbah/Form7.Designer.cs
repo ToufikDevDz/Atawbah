@@ -37,7 +37,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah;
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox1.Name = "pictureBox1";

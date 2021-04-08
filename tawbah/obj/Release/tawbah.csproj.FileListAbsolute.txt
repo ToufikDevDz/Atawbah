@@ -1,38 +1,9 @@
-C:\Users\toufi\source\repos\tawbah\tawbah\bin\Release\tawbah.exe
-C:\Users\toufi\source\repos\tawbah\tawbah\bin\Release\tawbah.pdb
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.csprojAssemblyReference.cache
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.Form1.resources
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.Properties.Resources.resources
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.csproj.GenerateResource.cache
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.csproj.CoreCompileInputs.cache
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.exe
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.pdb
-C:\Users\toufi\source\repos\tawbah\tawbah\bin\Release\LinqBridge.dll
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.Form2.resources
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.Form3.resources
-C:\Users\toufi\source\repos\tawbah\tawbah\obj\Release\tawbah.csproj.CopyComplete
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\Atawbah.exe
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\Atawbah.pdb
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\bin\Release\LinqBridge.dll
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.csprojAssemblyReference.cache
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form1.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form2.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form3.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form4.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Form5.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.Properties.Resources.resources
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.csproj.GenerateResource.cache
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.csproj.CoreCompileInputs.cache
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\tawbah.csproj.CopyComplete
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\Atawbah.exe
-C:\Users\toufi\source\repos\‏‏tawbah - أضواء\tawbah\obj\Release\Atawbah.pdb
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\Atawbah.exe
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\Atawbah.pdb
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\bin\Release\LinqBridge.dll
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form1.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form2.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form3.resources
-C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form4.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form5.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form6.resources
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.Form7.resources
