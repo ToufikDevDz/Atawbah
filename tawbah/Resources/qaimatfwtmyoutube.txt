@@ -1,0 +1,17 @@
+#local host Energized Protection # twbhlclhst
+127.0.0.1 localhost # twbhlclhst
+127.0.0.1 localhost.localdomain # twbhlclhst
+127.0.0.1 local # twbhlclhst
+255.255.255.255 broadcasthost # twbhlclhst
+::1 localhost # twbhlclhst
+::1 ip6-localhost # twbhlclhst
+::1 ip6-loopback # twbhlclhst
+fe80::1%lo0 localhost # twbhlclhst
+ff00::0 ip6-localnet # twbhlclhst
+ff00::0 ip6-mcastprefix # twbhlclhst
+ff02::1 ip6-allnodes # twbhlclhst
+ff02::2 ip6-allrouters # twbhlclhst
+ff02::3 ip6-allhosts # twbhlclhst
+0.0.0.0 0.0.0.0 # twbhlclhst
+#youtube al wadh' al amin moderate la yojad ta'liqat # twbahfwtmy
+216.239.38.119 youtube.com www.youtube.com m.youtube.com youtube.googleapis.com youtubei.googleapis.com www.youtube-nocookie.com # twbahfwtmy

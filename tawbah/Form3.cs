@@ -99,16 +99,6 @@ namespace tawbah
             this.nass.SelectionStart = 0;
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            //فتح صفحة شرح البرنامج
-            try
-            {
-                System.Diagnostics.Process.Start("https://bit.ly/asharh-at");
-            }
-            catch { }
-        }
-
         private void nass_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             //فتح الروابط

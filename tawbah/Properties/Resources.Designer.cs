@@ -73,9 +73,29 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap al3id {
+            get {
+                object obj = ResourceManager.GetObject("al3id", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap alisdar {
             get {
                 object obj = ResourceManager.GetObject("alisdar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap almayzat01 {
+            get {
+                object obj = ResourceManager.GetObject("almayzat01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -92,14 +112,24 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red255\green110\blue50;\red0\green145\blue65;\red0\green176\blue80;\red192\green80\blue77;\red0\green151\blue68;}
+        ///{\colortbl ;\red255\green106\blue34;\red0\green157\blue79;\red0\green176\blue80;\red82\green82\blue82;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\ri57\li57\sa200\sl240\slmult1\qc\cf1\ul\f0\rtlch\fs36\&apos;d4\&apos;df\&apos;d1\ulnone\fs22\par
-        ///\cf2\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\ri57\li57\sa200\sl276\slmult1\qc\cf1\f0\rtlch\fs36\&apos;d4\&apos;df\&apos;d1\fs22\par
+        ///\cf2\fs32\&apos;c3\&apos;e6\&apos;f8\&apos;e1\&apos;c7\&apos;a1\f1\ltrch\lang1036  \f0\rtlch\lang1025\&apos;c3\&apos;cd\&apos;e3\&apos;cf \b\&apos;c7\&apos;e1\&apos;e1\&apos;e5 \&apos;da\&apos;d2\&apos;f8 \&apos;e6\&apos;cc\&apos;e1\&apos;f8 \b [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string chokr1 {
             get {
                 return ResourceManager.GetString("chokr1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foqa3ajadid {
+            get {
+                object obj = ResourceManager.GetObject("foqa3ajadid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -126,9 +156,9 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap halmoqtarah1 {
+        internal static System.Drawing.Bitmap halmoqtarah {
             get {
-                object obj = ResourceManager.GetObject("halmoqtarah1", resourceCulture);
+                object obj = ResourceManager.GetObject("halmoqtarah", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap i3dadat {
+            get {
+                object obj = ResourceManager.GetObject("i3dadat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iblagh {
             get {
                 object obj = ResourceManager.GetObject("iblagh", resourceCulture);
@@ -166,9 +206,9 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap isdarjadid1 {
+        internal static System.Drawing.Bitmap intidhar {
             get {
-                object obj = ResourceManager.GetObject("isdarjadid1", resourceCulture);
+                object obj = ResourceManager.GetObject("intidhar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,9 +216,9 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap istiadad {
+        internal static System.Drawing.Bitmap isdarjadid1 {
             get {
-                object obj = ResourceManager.GetObject("istiadad", resourceCulture);
+                object obj = ResourceManager.GetObject("isdarjadid1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,11 +245,10 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red255\green128\blue0;\red192\green80\blue77;\red0\green176\blue80;\red240\green120\blue0;}
+        ///{\colortbl ;\red255\green106\blue34;\red51\green51\blue51;\red0\green157\blue79;\red192\green80\blue77;\red0\green128\blue0;\red82\green82\blue82;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\ul\f0\rtlch\fs36\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5\par
-        ///\cf2\ulnone\fs32\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf3\ul\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\cf0\ulnone\fs36\par
-        ///\cf2\b\fs28\&apos;ed\&apos;d3 [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\sa200\sl276\slmult1\qc\cf1\f0\rtlch\fs36\&apos;c7\&apos;e1\&apos;ca\&apos;f8\&apos;d1\&apos;ce\&apos;ed\&apos;d5\par
+        ///\cf2\fs32\&apos;c7\&apos;e1\&apos;c8\&apos;d1\&apos;e4\&apos;c7\&apos;e3\&apos;cc\cf0  \cf3\ul\&apos;e3\&apos;cc\&apos;f8\&apos;c7\&apos;e4\&apos;ed\&apos;f8\ulnone\ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string License1 {
             get {
@@ -243,6 +282,16 @@ namespace tawbah.Properties {
         internal static System.Drawing.Bitmap lighthawla {
             get {
                 object obj = ResourceManager.GetObject("lighthawla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lighti3dadat {
+            get {
+                object obj = ResourceManager.GetObject("lighti3dadat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -300,6 +349,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lightziralmayzat {
+            get {
+                object obj = ResourceManager.GetObject("lightziralmayzat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mawqi {
             get {
                 object obj = ResourceManager.GetObject("mawqi", resourceCulture);
@@ -318,10 +377,10 @@ namespace tawbah.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red255\green110\blue50;\red192\green0\blue0;\red0\green176\blue80;\red192\green80\blue77;\red38\green38\blue38;\red0\green0\blue255;\red60\green22\blue9;\red51\green51\blue51;\red226\green76\blue2;\red255\green255\blue255;\red83\green129\blue53;\red197\green89\blue17;\red0\green128\blue0;}
+        ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fswiss\fcharset178 Calibri;}{\f3\fswiss\fcharset0 Calibri;}}
+        ///{\colortbl ;\red255\green106\blue34;\red192\green0\blue0;\red51\green51\blue51;\red82\green82\blue82;\red27\green27\blue27;\red0\green0\blue255;\red60\green22\blue9;\red38\green38\blue38;\red0\green176\blue80;\red0\green94\blue43;\red0\green157\blue79;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\ri57\li57\sl [rest of string was truncated]&quot;;.
+        ///\pard\rtlpa [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string nassasilawaajwiba {
             get {
@@ -331,9 +390,9 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red192\green80\blue77;\red0\green0\blue255;\red0\green176\blue80;}
+        ///{\colortbl ;\red82\green82\blue82;\red0\green0\blue255;\red192\green80\blue77;\red0\green176\blue80;}
         ///{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
-        ///\pard\rtlpar\ri57\li57\sl240\slmult1\qr\cf1\f0\rtlch\fs28\&apos;de\&apos;e3\&apos;e4\&apos;c7 \&apos;c8\&apos;c5\&apos;e4\&apos;d4\&apos;c7\&apos;c1 \&apos;c7\&apos;e1\&apos;e3\&apos;e6\&apos;de\&apos;da \&apos;c7\&apos;e1\&apos;e3\&apos;cd\&apos;cc\&apos;e6\&apos;c8 \&apos;e1\&apos;ed\&apos;ca\&apos;cd\&apos;de\&apos;de \&apos;c7\&apos;e1\&apos;e3\&apos;d3\&apos;ca\&apos;ce\&apos;cf\&apos;e3 \&apos;e3\&apos;e4 \&apos;ce\&apos;e1\&apos;c7\&apos;e1\&apos;e5 \&apos;c3\&apos;e4 [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\ri57\li57\sl276\slmult1\qr\cf1\f0\rtlch\fs28\&apos;de\&apos;e3\&apos;e4\&apos;c7 \&apos;c8\&apos;c5\&apos;e4\&apos;d4\&apos;c7\&apos;c1 \&apos;c7\&apos;e1\&apos;e3\&apos;e6\&apos;de\&apos;da \&apos;c7\&apos;e1\&apos;e3\&apos;cd\&apos;cc\&apos;e6\&apos;c8 \&apos;e1\&apos;ed\&apos;ca\&apos;cd\&apos;de\&apos;de \&apos;c7\&apos;e1\&apos;e3\&apos;d3\&apos;ca\&apos;ce\&apos;cf\&apos;e3 \&apos;e3\&apos;e4 \&apos;ce\&apos;e [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string nastahaqoq {
             get {
@@ -342,27 +401,81 @@ namespace tawbah.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to #local host Energized Protection # twbh
-        ///127.0.0.1 localhost # twbh
-        ///127.0.0.1 localhost.localdomain # twbh
-        ///127.0.0.1 local # twbh
-        ///255.255.255.255 broadcasthost # twbh
-        ///::1 localhost # twbh
-        ///::1 ip6-localhost # twbh
-        ///::1 ip6-loopback # twbh
-        ///fe80::1%lo0 localhost # twbh
-        ///ff00::0 ip6-localnet # twbh
-        ///ff00::0 ip6-mcastprefix # twbh
-        ///ff02::1 ip6-allnodes # twbh
-        ///ff02::2 ip6-allrouters # twbh
-        ///ff02::3 ip6-allhosts # twbh
-        ///0.0.0.0 0.0.0.0 # twbh
-        ///#tahaqoq # twbh
-        ///0.0.0.0 lilhajb.blogspot.com www.lilhajb.blogsp [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to #local host Energized Protection # twbhlclhst
+        ///127.0.0.1 localhost # twbhlclhst
+        ///127.0.0.1 localhost.localdomain # twbhlclhst
+        ///127.0.0.1 local # twbhlclhst
+        ///255.255.255.255 broadcasthost # twbhlclhst
+        ///::1 localhost # twbhlclhst
+        ///::1 ip6-localhost # twbhlclhst
+        ///::1 ip6-loopback # twbhlclhst
+        ///fe80::1%lo0 localhost # twbhlclhst
+        ///ff00::0 ip6-localnet # twbhlclhst
+        ///ff00::0 ip6-mcastprefix # twbhlclhst
+        ///ff02::1 ip6-allnodes # twbhlclhst
+        ///ff02::2 ip6-allrouters # twbhlclhst
+        ///ff02::3 ip6-allhosts # twbhlclhst
+        ///0.0. [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string qaimatalmawaqi {
             get {
                 return ResourceManager.GetString("qaimatalmawaqi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to #local host Energized Protection # twbhlclhst
+        ///127.0.0.1 localhost # twbhlclhst
+        ///127.0.0.1 localhost.localdomain # twbhlclhst
+        ///127.0.0.1 local # twbhlclhst
+        ///255.255.255.255 broadcasthost # twbhlclhst
+        ///::1 localhost # twbhlclhst
+        ///::1 ip6-localhost # twbhlclhst
+        ///::1 ip6-loopback # twbhlclhst
+        ///fe80::1%lo0 localhost # twbhlclhst
+        ///ff00::0 ip6-localnet # twbhlclhst
+        ///ff00::0 ip6-mcastprefix # twbhlclhst
+        ///ff02::1 ip6-allnodes # twbhlclhst
+        ///ff02::2 ip6-allrouters # twbhlclhst
+        ///ff02::3 ip6-allhosts # twbhlclhst
+        ///0.0. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string qaimatfwtmyoutube {
+            get {
+                return ResourceManager.GetString("qaimatfwtmyoutube", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to #local host Energized Protection # twbhlclhst
+        ///127.0.0.1 localhost # twbhlclhst
+        ///127.0.0.1 localhost.localdomain # twbhlclhst
+        ///127.0.0.1 local # twbhlclhst
+        ///255.255.255.255 broadcasthost # twbhlclhst
+        ///::1 localhost # twbhlclhst
+        ///::1 ip6-localhost # twbhlclhst
+        ///::1 ip6-loopback # twbhlclhst
+        ///fe80::1%lo0 localhost # twbhlclhst
+        ///ff00::0 ip6-localnet # twbhlclhst
+        ///ff00::0 ip6-mcastprefix # twbhlclhst
+        ///ff02::1 ip6-allnodes # twbhlclhst
+        ///ff02::2 ip6-allrouters # twbhlclhst
+        ///ff02::3 ip6-allhosts # twbhlclhst
+        ///0.0. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string qaimatmani3ali3lanat {
+            get {
+                return ResourceManager.GetString("qaimatmani3ali3lanat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ramadan {
+            get {
+                object obj = ResourceManager.GetObject("ramadan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -462,6 +575,66 @@ namespace tawbah.Properties {
         internal static System.Drawing.Bitmap wajiha1 {
             get {
                 object obj = ResourceManager.GetObject("wajiha1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zir0 {
+            get {
+                object obj = ResourceManager.GetObject("zir0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zir0moatal {
+            get {
+                object obj = ResourceManager.GetObject("zir0moatal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zir1 {
+            get {
+                object obj = ResourceManager.GetObject("zir1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zir1moatal {
+            get {
+                object obj = ResourceManager.GetObject("zir1moatal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ziralmayzat {
+            get {
+                object obj = ResourceManager.GetObject("ziralmayzat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ziralmayzatmoatal {
+            get {
+                object obj = ResourceManager.GetObject("ziralmayzatmoatal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

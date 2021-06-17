@@ -37,7 +37,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah1;
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox1.Name = "pictureBox1";
@@ -51,9 +51,9 @@
             this.iblagh.BackgroundImage = global::tawbah.Properties.Resources.iblagh;
             this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iblagh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iblagh.Location = new System.Drawing.Point(252, 221);
+            this.iblagh.Location = new System.Drawing.Point(372, 225);
             this.iblagh.Name = "iblagh";
-            this.iblagh.Size = new System.Drawing.Size(116, 40);
+            this.iblagh.Size = new System.Drawing.Size(121, 40);
             this.iblagh.TabIndex = 12;
             this.iblagh.TabStop = false;
             this.iblagh.Click += new System.EventHandler(this.iblagh_Click);
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(550, 287);
+            this.ClientSize = new System.Drawing.Size(550, 358);
             this.Controls.Add(this.iblagh);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -76,7 +76,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "الحل المقترح لمشكلة ظهور رسالة الخطأ";
+            this.Text = "الحلول المقترح لمشكلة ظهور رسالة الخطأ";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iblagh)).EndInit();

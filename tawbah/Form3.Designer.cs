@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.chokr = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.iblagh = new System.Windows.Forms.PictureBox();
             this.nass = new System.Windows.Forms.RichTextBox();
             this.logosmall = new System.Windows.Forms.PictureBox();
@@ -57,15 +56,6 @@
             this.chokr.Click += new System.EventHandler(this.chokr_Click);
             this.chokr.MouseEnter += new System.EventHandler(this.chokr_MouseEnter);
             this.chokr.MouseLeave += new System.EventHandler(this.chokr_MouseLeave);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 6;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // iblagh
             // 
@@ -158,7 +148,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nass);
             this.Controls.Add(this.iblagh);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.chokr);
             this.Controls.Add(this.logosmall);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -181,7 +170,6 @@
 
         #endregion
         private System.Windows.Forms.PictureBox chokr;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox iblagh;
         private System.Windows.Forms.RichTextBox nass;
         private System.Windows.Forms.PictureBox logosmall;

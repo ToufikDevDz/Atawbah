@@ -137,6 +137,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,7 @@
     <Compile Include="HashSet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
@@ -184,6 +194,7 @@
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -231,6 +242,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aycona.ico" />
+    <None Include="Resources\al3id.png" />
+    <None Include="Resources\ramadan.png" />
+    <None Include="Resources\3id.png" />
+    <None Include="Resources\foqa3ajadid.png" />
+    <None Include="Resources\foqa3ajadid.gif" />
+    <None Include="Resources\qaimatfwtmyoutube.txt" />
+    <None Include="Resources\qaimatmani3ali3lanat.txt" />
+    <None Include="Resources\halmoqtarah.png" />
+    <None Include="Resources\zir1moatal.png" />
+    <None Include="Resources\zir0moatal.png" />
+    <None Include="Resources\ziralmayzatmoatal.png" />
+    <None Include="Resources\intidhar.gif" />
+    <None Include="Resources\almayzat01.png" />
+    <None Include="Resources\ziralmayzat.png" />
+    <None Include="Resources\lightziralmayzat.png" />
+    <None Include="Resources\zir1.png" />
+    <None Include="Resources\zir0.png" />
+    <None Include="Resources\lighti3dadat.png" />
+    <None Include="Resources\i3dadat.png" />
     <None Include="Resources\tahdithmoatal.png" />
     <None Include="Resources\mawqimoatal.png" />
     <None Include="Resources\hawlamoatal.png" />
@@ -242,8 +272,6 @@
     <None Include="Resources\tahaqoq.jpg" />
     <None Include="Resources\isdarjadid.jpg" />
     <None Include="Resources\isbir.jpg" />
-    <None Include="Resources\halmoqtarah.jpg" />
-    <None Include="Resources\istiadad.gif" />
     <None Include="Resources\soalwajawab.png" />
     <None Include="Resources\lightsoalwajawab.png" />
     <None Include="Resources\tahaqoqnajah.png" />
@@ -259,7 +287,6 @@
     <None Include="Resources\iblagh.png" />
     <None Include="Resources\chokr.png" />
     <None Include="Resources\ajax-loader.gif" />
-    <None Include="Resources\1.png" />
     <None Include="Resources\qaimatalmawaqi.txt" />
   </ItemGroup>
   <ItemGroup>
