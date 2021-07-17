@@ -24,3 +24,9 @@ https://atawbah1.blogspot.com
 atawbah1@gmail.com
 
 وفقك الله
+
+***
+مصادر الأكواد المستخدمة في البرنامج
+https://stackoverflow.com/
+
+جزاهم الله خيرا
