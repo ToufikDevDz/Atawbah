@@ -24,10 +24,3 @@ https://atawbah1.blogspot.com
 atawbah1@gmail.com
 
 وفقك الله
-
-***
-الكثير من أكواد البرنامج مأخوذة من إجابات أعضاء موقع
-
-https://stackoverflow.com/
-
-جزاهم الله خيرا
