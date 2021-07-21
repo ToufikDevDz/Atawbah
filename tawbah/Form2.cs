@@ -1,4 +1,8 @@
-﻿using System;
+﻿//هام
+//الأكواد المقتبسة من المواقع سواء بتصرف أو بدونه مكتوبة بين شولتين (//"  //") ومصادرها مذكورة في آخر الصفحة 
+//حذار من روابط المصادر، فقد تحتوي على صور النساء، ننصحك بحجب الصور في المتصفح قبل الدخول إليها
+
+using System;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -52,7 +56,8 @@ namespace tawbah
         private void nass_Enter(object sender, EventArgs e)
         {
             //هذا يساعد على حجب مؤشر الكتابة بإذن الله
-            label2.Focus();
+            //"
+            label2.Focus(); //" م1
         }
 
         private void tahaqoq_MouseEnter(object sender, EventArgs e)
@@ -88,3 +93,9 @@ namespace tawbah
         }
     }
 }
+
+//مصادر أكواد البرنامج
+
+    //المصدر م1
+    //Henk Holterman, Stack Overflow, https://stackoverflow.com/a/1140277, 
+    //CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/

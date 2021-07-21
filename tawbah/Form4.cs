@@ -1,4 +1,9 @@
-﻿using System;
+﻿//هام
+//الأكواد المقتبسة من المواقع سواء بتصرف أو بدونه مكتوبة بين شولتين (//"  //") ومصادرها مذكورة في آخر الصفحة 
+//حذار من روابط المصادر، فقد تحتوي على صور النساء، ننصحك بحجب الصور في المتصفح قبل الدخول إليها
+
+
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.IO;
@@ -74,6 +79,7 @@ namespace tawbah
         //Flush Dns
         private void flush()
         {
+            //"
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -81,56 +87,60 @@ namespace tawbah
             startInfo.Arguments = "/C ipconfig /flushdns";
             startInfo.Verb = "runas";
             process.StartInfo = startInfo;
-            process.Start();
+            process.Start(); //" م1
         }
 
-        //تشغيل dnscache
+        //Dnscache تفعيل وتشغيل
         private void tachghildnscache()
         {
             //تفعيلها
             try
             {
+                //"
                 RegistryKey myKey = Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\services\\Dnscache", true);
                 if (myKey != null)
                 {
                     myKey.SetValue("Start", "2", RegistryValueKind.String);
                     myKey.Close();
-                }
+                } //" م2 بتصرف
             }
             catch { }
 
             //تشغيلها
+            //"
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
             startInfo.Arguments = "/C net start dnscache";
             process.StartInfo = startInfo;
-            process.Start();
+            process.Start(); //" م1 بتصرف
         }
 
-        //إيقاف dnscache
+        //Dnscache إيقاف وإلغاء تفعيل
         //أضفنا هذا الأمر لحل مشكلة ظهور رسالة الخطأ أثناء العمليات عندما يكون ملف هوستس كبير
         private void iqafdnscache()
         {
             //إيقافها
+            //"
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
             startInfo.Arguments = "/C net stop dnscache";
             process.StartInfo = startInfo;
-            process.Start();
+            process.Start(); //" م1 بتصرف
 
             //إلغاء تفعيلها
             try
             {
+                //"
                 RegistryKey myKey = Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\services\\Dnscache", true);
                 if (myKey != null)
                 {
                     myKey.SetValue("Start", "4", RegistryValueKind.String);
                     myKey.Close();
-                }
+                } //" م2 بتصرف
             }
             catch { }
         }
@@ -181,7 +191,7 @@ namespace tawbah
         //تستخدم بعد انتهاء العمليات
         private void intihaa()
         {
-            //تشغيل dnscache
+            //Dnscache تفعيل وتشغيل
             tachghildnscache();
             
             //...
@@ -242,31 +252,34 @@ namespace tawbah
                 //hosts التحقق من وجود الملف
                 if (!File.Exists(pathhosts))
                 {
-                    //إنشاء الملف إذا لم يكن موجودا
-                    using (StreamWriter w = File.AppendText(pathhosts));
+                    //إنشاء الملف إذا كان غير موجودا
+                    //"
+                    using (StreamWriter w = File.AppendText(pathhosts)); //" م3 بتصرف 
                     goto start3amaliya;
                 }
 
             start3amaliya:
-                //إيقاف dnscache
+                //Dnscache إيقاف وإلغاء تفعيل
                 iqafdnscache();
                 Thread.Sleep(5000);
 
-                //إلغاء السمة للقراءة فقط والسمات الأخرى للملف
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
                 FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //حذف المواقع التي أضافها البرنامج إلى الملف
                 //(twbahfwtmy حذف الأسطر التي تحتوي على كلمة)
                 //وكلمة أخرى خاصة بالإصدارات القديمة
+                //"
                 string[] domains = { "twbahfwtmy", "twbhytb" };
                 string[] lines = File.ReadAllLines(pathhosts)
                                      .Where(l => !domains.Any(d => l.Contains(d)))
                                      .ToArray();
 
-                File.WriteAllLines(pathhosts, lines);
+                File.WriteAllLines(pathhosts, lines); //" م4 بتصرف
 
                 //حذف الأسطر الخاصة بلوكل هوست الإصدارات القديمة للبرنامج
+                //"
                 string[] domains2 = {
                     "#local host Energized Protection # twbh",
                     "127.0.0.1 localhost # twbh",
@@ -289,18 +302,20 @@ namespace tawbah
                                      .Where(l => !domains2.Any(d => l.Contains(d)))
                                      .ToArray();
 
-                File.WriteAllLines(pathhosts, lines2);
+                File.WriteAllLines(pathhosts, lines2); //" م4 بتصرف
 
                 //إضافة الأسطر الخاصة بميزة فرض وضع تقييد المحتوى لليوتيوب إلى الملف 
                 //مع إضافة أسطر لوكل هوست الخاصة بالإصدار وهي موجودة في نفس الملف الخاص بالميزة
+                //"
                 using (StreamWriter sw = File.AppendText(pathhosts))
                 {
                     sw.WriteLine(Properties.Resources.qaimatfwtmyoutube);
-                }
+                } //" م5 بتصرف
 
                 //حذف الأسطر المكررة
+                //"
                 string[] lines3 = File.ReadAllLines(pathhosts);
-                File.WriteAllLines(pathhosts, lines3.Distinct().ToArray());
+                File.WriteAllLines(pathhosts, lines3.Distinct().ToArray()); //" م6 بتصرف
 
                 //تنشيط السمة للقراءة فقط
                 hostsnfo.IsReadOnly = true;
@@ -341,13 +356,14 @@ namespace tawbah
                 //hosts التحقق من وجود الملف
                 if (!File.Exists(pathhosts))
                 {
-                    //إنشاء الملف إذا لم يكن موجودا
-                    using (StreamWriter w = File.AppendText(pathhosts)) ;
+                    //إنشاء الملف إذا كان غير موجودا
+                    //"
+                    using (StreamWriter w = File.AppendText(pathhosts)); //" م3 بتصرف
                     goto start3amaliya;
                 }
 
-                start3amaliya:
-                //إيقاف dnscache
+            start3amaliya:
+                //Dnscache إيقاف وإلغاء تفعيل
                 iqafdnscache();
                 Thread.Sleep(5000);
 
@@ -358,12 +374,13 @@ namespace tawbah
                 //hosts حذف المواقع التي أضافها البرنامج إلى الملف
                 //(twbahfwtmy حذف الأسطر التي تحتوي على كلمة)
                 //وكلمة أخرى خاصة بالإصدارات القديمة
+                //"
                 string[] domains = { "twbahfwtmy", "twbhytb" };
                 string[] lines = File.ReadAllLines(pathhosts)
                                      .Where(l => !domains.Any(d => l.Contains(d)))
                                      .ToArray();
 
-                File.WriteAllLines(pathhosts, lines);
+                File.WriteAllLines(pathhosts, lines); //" م4 بتصرف
 
                 //تنشيط السمة للقراءة فقط
                 FileInfo hostsnfo2 = new FileInfo(pathhosts);
@@ -471,22 +488,24 @@ namespace tawbah
                 //hosts التحقق من وجود الملف
                 if (!File.Exists(pathhosts))
                 {
-                    //إنشاء الملف إذا لم يكن موجودا
-                    using (StreamWriter w = File.AppendText(pathhosts)) ;
+                    //إنشاء الملف إذا كان غير موجودا
+                    //"
+                    using (StreamWriter w = File.AppendText(pathhosts)); //" م3 بتصرف
                     goto start3amaliya;
                 }
 
             start3amaliya:
-                //إيقاف dnscache
+                //Dnscache إيقاف وإلغاء تفعيل
                 iqafdnscache();
                 Thread.Sleep(5000);
 
-                //إلغاء السمة للقراءة فقط والسمات الأخرى للملف
+                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
                 FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
-                //حذف المواقع التي أضافها البرنامج إلى الملف
+                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
                 //(twbahmi3lnt حذف الأسطر التي تحتوي على كلمة)
+                //"
                 string search_text = "twbahmi3lnt";
                 string old;
                 string n = "";
@@ -501,9 +520,10 @@ namespace tawbah
                 }
 
                 sr.Close();
-                File.WriteAllText(pathhosts, n);
+                File.WriteAllText(pathhosts, n); //" م7 بتصرف
 
                 //حذف الأسطر الخاصة بلوكل هوست الإصدارات القديمة للبرنامج
+                //"
                 string[] domains2 = {
                     "#local host Energized Protection # twbh",
                     "127.0.0.1 localhost # twbh",
@@ -526,17 +546,19 @@ namespace tawbah
                                      .Where(l => !domains2.Any(d => l.Contains(d)))
                                      .ToArray();
 
-                File.WriteAllLines(pathhosts, lines3);
+                File.WriteAllLines(pathhosts, lines3); //" م4 بتصرف
 
                 //إضافة الأسطر الخاصة بمانع الإعلانات إلى الملف 
+                //"
                 using (StreamWriter sw = File.AppendText(pathhosts))
                 {
                     sw.WriteLine(Properties.Resources.qaimatmani3ali3lanat);
-                }
+                } //" م5 بتصرف
 
                 //حذف الأسطر المكررة
+                //"
                 string[] lines = File.ReadAllLines(pathhosts);
-                File.WriteAllLines(pathhosts, lines.Distinct().ToArray());
+                File.WriteAllLines(pathhosts, lines.Distinct().ToArray()); //" م6 بتصرف
 
                 //تنشيط السمة للقراءة فقط
                 hostsnfo.IsReadOnly = true;
@@ -577,13 +599,14 @@ namespace tawbah
                 //hosts التحقق من وجود الملف
                 if (!File.Exists(pathhosts))
                 {
-                    //إنشاء الملف إذا لم يكن موجودا
-                    using (StreamWriter w = File.AppendText(pathhosts)) ;
+                    //إنشاء الملف إذا كان غير موجودا
+                    //"
+                    using (StreamWriter w = File.AppendText(pathhosts)); //" م3 بتصرف
                     goto start3amaliya;
                 }
 
             start3amaliya:
-                //إيقاف dnscache
+                //Dnscache إيقاف وإلغاء تفعيل
                 iqafdnscache();
                 Thread.Sleep(5000);
 
@@ -593,6 +616,7 @@ namespace tawbah
 
                 //hosts حذف المواقع التي أضافها البرنامج إلى الملف
                 //twbahmi3lnt حذف الأسطر التي تحتوي على كلمة
+                //"
                 string search_text = "twbahmi3lnt";
                 string old;
                 string n = "";
@@ -607,7 +631,7 @@ namespace tawbah
                 }
 
                 sr.Close();
-                File.WriteAllText(pathhosts, n);
+                File.WriteAllText(pathhosts, n); //" م7 بتصرف
 
                 //تنشيط السمة للقراءة فقط
                 FileInfo hostsnfo2 = new FileInfo(pathhosts);
@@ -662,3 +686,33 @@ namespace tawbah
         }
     }
 }
+
+//مصادر أكواد البرنامج
+
+//المصدر م1
+//R1CH101, Stack Overflow, https://stackoverflow.com/a/45909851, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/ 
+
+//المصدر م2
+//Jontatas, Stack Overflow, https://stackoverflow.com/a/8816229, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/  
+
+//المصدر م3
+//Chris Gessler, Stack Overflow, https://stackoverflow.com/a/10383123, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/  
+
+//المصدر م4
+//Sergey Berezovskiy, Stack Overflow, https://stackoverflow.com/a/20344108, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+
+//المصدر م5
+//Gabe, Stack Overflow, https://stackoverflow.com/a/2837040, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+
+//المصدر م6
+//Darin Dimitrov, Stack Overflow, https://stackoverflow.com/a/1245524, 
+//CC BY-SA 2.5, https://creativecommons.org/licenses/by-sa/2.5/
+
+//المصدر م7
+//Tim Schmelter, Stack Overflow, https://stackoverflow.com/a/10371680, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/  
