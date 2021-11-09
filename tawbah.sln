@@ -12,11 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ABuildThatTargetASpecificCulture|Any CPU = ABuildThatTargetASpecificCulture|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 		Description = التوبة برنامج مجاني لحجب المواقع الخليعة الخبيثة
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.ABuildThatTargetASpecificCulture|Any CPU.ActiveCfg = Debug|Any CPU
+		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.ABuildThatTargetASpecificCulture|Any CPU.Build.0 = Debug|Any CPU
 		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9822C562-84E8-4F6D-A49F-57D64AFEF28A}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,6 +1,6 @@
 ﻿namespace tawbah
 {
-    partial class Form7
+    partial class Form05
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form05));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iblagh = new System.Windows.Forms.PictureBox();
+            this.tahmil = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iblagh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tahmil)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.isdarjadid;
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 369);
+            this.pictureBox1.Size = new System.Drawing.Size(438, 272);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // iblagh
+            // tahmil
             // 
-            this.iblagh.BackColor = System.Drawing.Color.White;
-            this.iblagh.BackgroundImage = global::tawbah.Properties.Resources.iblagh;
-            this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.iblagh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iblagh.Location = new System.Drawing.Point(372, 225);
-            this.iblagh.Name = "iblagh";
-            this.iblagh.Size = new System.Drawing.Size(121, 40);
-            this.iblagh.TabIndex = 12;
-            this.iblagh.TabStop = false;
-            this.iblagh.Click += new System.EventHandler(this.iblagh_Click);
-            this.iblagh.MouseEnter += new System.EventHandler(this.iblagh_MouseEnter);
-            this.iblagh.MouseLeave += new System.EventHandler(this.iblagh_MouseLeave);
+            this.tahmil.BackgroundImage = global::tawbah.Properties.Resources.tahmil;
+            this.tahmil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tahmil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tahmil.Location = new System.Drawing.Point(126, 239);
+            this.tahmil.Margin = new System.Windows.Forms.Padding(0);
+            this.tahmil.Name = "tahmil";
+            this.tahmil.Size = new System.Drawing.Size(159, 49);
+            this.tahmil.TabIndex = 1;
+            this.tahmil.TabStop = false;
+            this.tahmil.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.tahmil.MouseEnter += new System.EventHandler(this.tahmil_MouseEnter);
+            this.tahmil.MouseLeave += new System.EventHandler(this.tahmil_MouseLeave);
             // 
-            // Form7
+            // Form05
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(550, 358);
-            this.Controls.Add(this.iblagh);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(410, 298);
+            this.Controls.Add(this.tahmil);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form7";
+            this.Name = "Form05";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "الحلول المقترح لمشكلة ظهور رسالة الخطأ";
-            this.Load += new System.EventHandler(this.Form7_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "إصدار جديد";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iblagh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tahmil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,6 +86,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox iblagh;
+        private System.Windows.Forms.PictureBox tahmil;
     }
 }

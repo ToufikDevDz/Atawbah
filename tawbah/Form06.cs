@@ -8,15 +8,16 @@ using System.Windows.Forms;
 
 namespace tawbah
 {
-    public partial class Form6 : Form
+    public partial class Form06 : Form
     {
-        public Form6()
+        public Form06()
         {
             InitializeComponent();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //timer غلق النافذة بعد مدة، انظر 
             Close();
         }
     }

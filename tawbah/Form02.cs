@@ -8,49 +8,49 @@ using System.Windows.Forms;
 
 namespace tawbah
 {
-    public partial class Form2 : Form
+    public partial class Form02 : Form
     {
-        public Form2()
+        public Form02()
         {
             InitializeComponent();
-            //إظهار نص التحقق من نجاح عملية حجب المواقع الخبيثة
-            this.nass.Text = "";
-            this.nass.SelectedRtf = Properties.Resources.nastahaqoq;
-            this.nass.SelectionStart = 0;
-        }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
+            //إظهار نص التحقق من نجاح عملية حجب المواقع الخبيثة
+            nass.Text = "";
+            nass.SelectedRtf = Properties.Resources.nastahaqoq;
+            nass.SelectionStart = 0;
+
             //غلق بعض النوافذ الأخرى
             try
             {
                 Application.OpenForms["Form3"].Close();
-            }
-            catch { }
-
-            try
-            {
                 Application.OpenForms["Form4"].Close();
-            }
-            catch { }
-
-            try
-            {
                 Application.OpenForms["Form5"].Close();
-            }
-            catch { }
-
-            try
-            {
                 Application.OpenForms["Form6"].Close();
+                Application.OpenForms["Form7"].Close();
+                Application.OpenForms["Form8"].Close();
+                Application.OpenForms["Form9"].Close();
             }
             catch { }
+        }
+        private void tahaqoq_Click(object sender, EventArgs e)
+        {
+            //تأثير عند الضغط
+            tahaqoq.BackgroundImage = Properties.Resources.tahaqoqnajah;
+            tahaqoq.Refresh();
+            Thread.Sleep(100);
+            tahaqoq.BackgroundImage = Properties.Resources.lighttahaqoqnajah;
 
+            //الدخول إلى الموقع المحجوب
             try
             {
-                Application.OpenForms["Form7"].Close();
+                System.Diagnostics.Process.Start("http://bit.ly/2O3ZkwD");
             }
             catch { }
+        }
+        private void nass_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            //فتح الروابط
+            System.Diagnostics.Process.Start(e.LinkText);
         }
 
         private void nass_Enter(object sender, EventArgs e)
@@ -69,33 +69,11 @@ namespace tawbah
         {
             tahaqoq.BackgroundImage = Properties.Resources.tahaqoqnajah;
         }
-
-        private void tahaqoq_Click(object sender, EventArgs e)
-        {
-            //تأثير عند الضغط
-            tahaqoq.BackgroundImage = Properties.Resources.tahaqoqnajah;
-            tahaqoq.Refresh();
-            Thread.Sleep(100);
-            tahaqoq.BackgroundImage = Properties.Resources.lighttahaqoqnajah;
-
-            //الدخول إلى الموقع المحجوب
-            try
-            {
-                System.Diagnostics.Process.Start("http://bit.ly/2O3ZkwD");
-            }
-            catch { }
-        }
-
-        private void nass_LinkClicked(object sender, LinkClickedEventArgs e)
-        {
-            //فتح الروابط
-            System.Diagnostics.Process.Start(e.LinkText);
-        }
     }
 }
 
 //مصادر أكواد البرنامج
 
-    //المصدر م1
-    //Henk Holterman, Stack Overflow, https://stackoverflow.com/a/1140277, 
-    //CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+//المصدر م1
+//Henk Holterman, Stack Overflow, https://stackoverflow.com/a/1140277, 
+//CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/

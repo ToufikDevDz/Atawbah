@@ -16,3 +16,40 @@ C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.csproj.CoreCo
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\tawbah.csproj.CopyComplete
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\Atawbah.exe
 C:\Users\Elite-Info\source\repos\Atawbah\tawbah\obj\Release\Atawbah.pdb
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\bin\Release\Atawbah.exe.config
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\bin\Release\Atawbah.exe
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\bin\Release\Atawbah.pdb
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\bin\Release\LinqBridge.dll
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.csproj.AssemblyReference.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form1.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form2.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form3.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form4.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form5.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form6.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Form7.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.Properties.Resources.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.csproj.GenerateResource.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.csproj.CoreCompileInputs.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\tawbah.csproj.CopyComplete
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\Atawbah.exe
+C:\Users\toufi\source\repos\ToufikDevDz\Atawbah\tawbah\obj\Release\Atawbah.pdb
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\Atawbah.exe.config
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\Atawbah.exe
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\Atawbah.pdb
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\LinqBridge.dll
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form01.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form02.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form03.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form04.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form05.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form06.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form09.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form08.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form07.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Properties.Resources.resources
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.csproj.GenerateResource.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.csproj.CoreCompileInputs.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.csproj.CopyComplete
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\Atawbah.exe
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\Atawbah.pdb

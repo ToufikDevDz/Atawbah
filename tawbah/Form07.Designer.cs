@@ -1,6 +1,6 @@
 ﻿namespace tawbah
 {
-    partial class Form6
+    partial class Form07
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form07));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.iblagh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iblagh)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.tahaqoq1;
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.halmoqtarah;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(555, 369);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // timer1
+            // iblagh
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 8000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.iblagh.BackColor = System.Drawing.Color.White;
+            this.iblagh.BackgroundImage = global::tawbah.Properties.Resources.iblagh;
+            this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.iblagh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iblagh.Location = new System.Drawing.Point(369, 223);
+            this.iblagh.Margin = new System.Windows.Forms.Padding(0);
+            this.iblagh.Name = "iblagh";
+            this.iblagh.Size = new System.Drawing.Size(121, 40);
+            this.iblagh.TabIndex = 12;
+            this.iblagh.TabStop = false;
+            this.iblagh.Click += new System.EventHandler(this.iblagh_Click);
+            this.iblagh.MouseEnter += new System.EventHandler(this.iblagh_MouseEnter);
+            this.iblagh.MouseLeave += new System.EventHandler(this.iblagh_MouseLeave);
             // 
-            // Form6
+            // Form07
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(414, 170);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(550, 358);
+            this.Controls.Add(this.iblagh);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form6";
+            this.Name = "Form07";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "التحقق من وجود إصدار جديد";
+            this.Text = "الحلول المقترحة لمشكلة ظهور رسالة الخطأ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iblagh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -77,6 +88,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox iblagh;
     }
 }

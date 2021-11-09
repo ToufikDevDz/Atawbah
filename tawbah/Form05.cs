@@ -9,9 +9,9 @@ using System.Threading;
 
 namespace tawbah
 {
-    public partial class Form5 : Form
+    public partial class Form05 : Form
     {
-        public Form5()
+        public Form05()
         {
             InitializeComponent();
         }

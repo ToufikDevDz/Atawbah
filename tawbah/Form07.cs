@@ -9,11 +9,24 @@ using System.Threading;
 
 namespace tawbah
 {
-    public partial class Form7 : Form
+    public partial class Form07 : Form
     {
-        public Form7()
+        public Form07()
         {
             InitializeComponent();
+
+            //غلق بعض النوافذ الأخرى
+            try
+            {
+                Application.OpenForms["Form2"].Close();
+                Application.OpenForms["Form3"].Close();
+                Application.OpenForms["Form4"].Close();
+                Application.OpenForms["Form5"].Close();
+                Application.OpenForms["Form6"].Close();
+                Application.OpenForms["Form8"].Close();
+                Application.OpenForms["Form9"].Close();
+            }
+            catch { }
         }
 
         private void iblagh_Click(object sender, EventArgs e)
@@ -39,40 +52,6 @@ namespace tawbah
         private void iblagh_MouseLeave(object sender, EventArgs e)
         {
             iblagh.BackgroundImage = Properties.Resources.iblagh;
-        }
-
-        private void Form7_Load(object sender, EventArgs e)
-        {
-            //غلق بعض النوافذ الأخرى
-            try
-            {
-                Application.OpenForms["Form2"].Close();
-            }
-            catch { }
-
-            try
-            {
-                Application.OpenForms["Form3"].Close();
-            }
-            catch { }
-
-            try
-            {
-                Application.OpenForms["Form4"].Close();
-            }
-            catch { }
-
-            try
-            {
-                Application.OpenForms["Form5"].Close();
-            }
-            catch { }
-
-            try
-            {
-                Application.OpenForms["Form6"].Close();
-            }
-            catch { }
         }
     }
 }

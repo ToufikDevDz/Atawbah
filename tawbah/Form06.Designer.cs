@@ -1,6 +1,6 @@
 ﻿namespace tawbah
 {
-    partial class Form5
+    partial class Form06
     {
         /// <summary>
         /// Required designer variable.
@@ -28,55 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form06));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tahmil = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tahmil)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.isdarjadid1;
-            this.pictureBox1.Location = new System.Drawing.Point(-14, 5);
+            this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.tahaqoq;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(438, 272);
+            this.pictureBox1.Size = new System.Drawing.Size(425, 173);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // tahmil
+            // timer1
             // 
-            this.tahmil.BackgroundImage = global::tawbah.Properties.Resources.tahmil;
-            this.tahmil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tahmil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahmil.Location = new System.Drawing.Point(126, 239);
-            this.tahmil.Name = "tahmil";
-            this.tahmil.Size = new System.Drawing.Size(159, 49);
-            this.tahmil.TabIndex = 1;
-            this.tahmil.TabStop = false;
-            this.tahmil.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.tahmil.MouseEnter += new System.EventHandler(this.tahmil_MouseEnter);
-            this.tahmil.MouseLeave += new System.EventHandler(this.tahmil_MouseLeave);
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 8000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form5
+            // Form06
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 298);
-            this.Controls.Add(this.tahmil);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(414, 170);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form5";
+            this.Name = "Form06";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "إصدار جديد";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "التحقق من وجود إصدار جديد";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tahmil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,6 +77,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox tahmil;
+        private System.Windows.Forms.Timer timer1;
     }
 }
