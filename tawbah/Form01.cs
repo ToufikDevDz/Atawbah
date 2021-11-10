@@ -122,14 +122,19 @@ namespace tawbah
         private void tachghildnscache()
         {
             //تفعيلها
-            System.Diagnostics.Process process2 = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo2 = new System.Diagnostics.ProcessStartInfo();
-            startInfo2.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo2.FileName = "cmd.exe";
-            startInfo2.Arguments = "/C sc config \"dnscache\" Start=auto";
-            startInfo2.Verb = "runas";
-            process2.StartInfo = startInfo2;
-            process2.Start(); //" م2 بتصرف
+            try
+            {
+                //"
+                RegistryKey myKey = Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\services\\Dnscache", true);
+                if (myKey != null)
+                {
+                    myKey.SetValue("Start", "2", RegistryValueKind.DWord);
+                    myKey.Close(); //" م3 بتصرف
+                }
+            }
+            /*إذا حدث خطأ في الأوامر الخاصة بالدي انس كاش لا تظهر رسائل الخطأ، فإذا نجح
+            تفعيله فالحمد لله، وإلا سيحاول البرنامج إكمال العمليات الأخرى بدون تفعيله */
+            catch { }
 
             //تشغيلها
             //"
@@ -159,14 +164,17 @@ namespace tawbah
             process.Start(); //" م2 بتصرف
 
             //إلغاء تفعيلها
-            System.Diagnostics.Process process2 = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo2 = new System.Diagnostics.ProcessStartInfo();
-            startInfo2.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo2.FileName = "cmd.exe";
-            startInfo2.Arguments = "/C sc config \"dnscache\" Start=disabled";
-            startInfo2.Verb = "runas";
-            process2.StartInfo = startInfo2;
-            process2.Start(); //" م2 بتصرف
+            try
+            {
+                //"
+                RegistryKey myKey = Registry.LocalMachine.OpenSubKey("SYSTEM\\CurrentControlSet\\services\\Dnscache", true);
+                if (myKey != null)
+                {
+                    myKey.SetValue("Start", "4", RegistryValueKind.DWord);
+                    myKey.Close(); //" م3 بتصرف
+                }
+            }
+            catch { }
         }
 
     //أوامر إزالة برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب من قائمة البرامج التي يتم تشغيلها عند بدأ تشغيل ويندوز 
