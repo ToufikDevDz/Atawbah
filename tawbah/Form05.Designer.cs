@@ -38,7 +38,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::tawbah.Properties.Resources.isdarjadid;
-            this.pictureBox1.Location = new System.Drawing.Point(-14, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(438, 272);
@@ -50,7 +50,7 @@
             this.tahmil.BackgroundImage = global::tawbah.Properties.Resources.tahmil;
             this.tahmil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahmil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahmil.Location = new System.Drawing.Point(126, 239);
+            this.tahmil.Location = new System.Drawing.Point(126, 263);
             this.tahmil.Margin = new System.Windows.Forms.Padding(0);
             this.tahmil.Name = "tahmil";
             this.tahmil.Size = new System.Drawing.Size(159, 49);
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 298);
+            this.ClientSize = new System.Drawing.Size(410, 336);
             this.Controls.Add(this.tahmil);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

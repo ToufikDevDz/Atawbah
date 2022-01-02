@@ -26,7 +26,7 @@ namespace tawbah
             this.KeyPreview = true;
 
             //إخفاء رسالة إعادة تشغيل مانع الإعلانات إذا تم غلقها من طرف المستخدم
-            if (Properties.Settings.Default.dhohorRisalatI3adatTachghilMani3AlI3lanat == false)
+            if (Properties.Settings.Default.idhharRisalatI3adatTachghilMani3AlI3lanat == false)
             {
                 risalaMi3lanat.Visible = false;
                 zirIghlaqAlrisala.Visible = false;
@@ -807,7 +807,7 @@ namespace tawbah
         //إخفاءالرسالة وحفظ حالتها لكي لا تظهر في المرة القادمة إن شاء الله
         risalaMi3lanat.Visible = false;
         zirIghlaqAlrisala.Visible = false;
-        Properties.Settings.Default.dhohorRisalatI3adatTachghilMani3AlI3lanat = false;
+        Properties.Settings.Default.idhharRisalatI3adatTachghilMani3AlI3lanat = false;
         Properties.Settings.Default.Save();
     }
 

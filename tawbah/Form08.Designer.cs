@@ -79,7 +79,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "الحل المقترح لمشكلة ظهور رسالة الخطأ رقم 01";
+            this.Text = "الحل المقترح لمشكلة ظهور رسالة خطأ رقم 01";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iblagh)).EndInit();
             this.ResumeLayout(false);

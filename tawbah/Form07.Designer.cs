@@ -52,7 +52,7 @@
             this.iblagh.BackgroundImage = global::tawbah.Properties.Resources.iblagh;
             this.iblagh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iblagh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iblagh.Location = new System.Drawing.Point(369, 223);
+            this.iblagh.Location = new System.Drawing.Point(369, 225);
             this.iblagh.Margin = new System.Windows.Forms.Padding(0);
             this.iblagh.Name = "iblagh";
             this.iblagh.Size = new System.Drawing.Size(121, 40);
@@ -78,7 +78,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "الحلول المقترحة لمشكلة ظهور رسالة الخطأ";
+            this.Text = "الحلول المقترحة لمشكلة ظهور رسالة خطأ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iblagh)).EndInit();
             this.ResumeLayout(false);

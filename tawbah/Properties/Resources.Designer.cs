@@ -390,6 +390,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lightzirmowafiq {
+            get {
+                object obj = ResourceManager.GetObject("lightzirmowafiq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mawqi {
             get {
                 object obj = ResourceManager.GetObject("mawqi", resourceCulture);
@@ -422,9 +432,9 @@ namespace tawbah.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset178 Calibri;}{\f1\fnil\fcharset0 Calibri;}}
-        ///{\colortbl ;\red122\green61\blue61;\red82\green82\blue82;\red0\green0\blue255;\red192\green80\blue77;}
+        ///{\colortbl ;\red51\green51\blue51;\red82\green82\blue82;\red0\green0\blue255;\red192\green80\blue77;}
         ///{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
-        ///\pard\rtlpar\ri57\li57\sa200\sl276\slmult1\qr\cf1\f0\rtlch\fs32\&apos;de\&apos;e3\&apos;e4\&apos;c7 \&apos;c8\&apos;c5\&apos;e4\&apos;d4\&apos;c7\&apos;c1 \&apos;c7\&apos;e1\&apos;e3\&apos;e6\&apos;de\&apos;da \&apos;c7\&apos;e1\&apos;e3\&apos;cd\&apos;cc\&apos;e6\&apos;c8 \&apos;e1\&apos;ed\&apos;ca\&apos;cd\&apos;de\&apos;de \&apos;c7\&apos;e1\&apos;e3\&apos;d3\&apos;ca\&apos;ce\&apos;cf\&apos;e3 \&apos;e3\&apos;e4  [rest of string was truncated]&quot;;.
+        ///\pard\rtlpar\ri57\li57\sa200\sl276\slmult1\qr\cf1\f0\rtlch\fs32\&apos;de\&apos;e3\&apos;e4\&apos;c7 \&apos;c8\&apos;c5\&apos;e4\&apos;d4\&apos;c7\&apos;c1 \&apos;c7\&apos;e1\&apos;e3\&apos;e6\&apos;de\&apos;da \&apos;c7\&apos;e1\&apos;e3\&apos;cd\&apos;cc\&apos;e6\&apos;c8 \&apos;e1\&apos;ed\&apos;ca\&apos;cd\&apos;de\&apos;de \&apos;c7\&apos;e1\&apos;e3\&apos;d3\&apos;ca\&apos;ce\&apos;cf\&apos;e3 \&apos;e3\&apos;e4 \ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string nastahaqoq {
             get {
@@ -604,6 +614,16 @@ namespace tawbah.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tanbihat {
+            get {
+                object obj = ResourceManager.GetObject("tanbihat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap taqdum {
             get {
                 object obj = ResourceManager.GetObject("taqdum", resourceCulture);
@@ -687,6 +707,16 @@ namespace tawbah.Properties {
         internal static System.Drawing.Bitmap zirghalq {
             get {
                 object obj = ResourceManager.GetObject("zirghalq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zirmowafiq {
+            get {
+                object obj = ResourceManager.GetObject("zirmowafiq", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

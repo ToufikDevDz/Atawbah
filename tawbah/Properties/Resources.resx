@@ -190,8 +190,14 @@
   <data name="wajiha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wajiha.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="adadannitaqat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adadannitaqat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mawqimoatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mawqimoatal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightzirmowafiq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightzirmowafiq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ziralmayzat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ziralmayzat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,11 +208,11 @@
   <data name="zir1moatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zir1moatal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lightziralmayzat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lightziralmayzat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tanbihat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tanbihat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="almayzat01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\almayzat01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hawlaAlBarnamaj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hawlaAlBarnamaj.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="intidhar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intidhar.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,14 +223,17 @@
   <data name="risala01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\risala01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qaimatmani3ali3lanat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qaimatmani3ali3lanat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="tahaqoq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tahaqoq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="al3id" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\al3id.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qaimatalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qaimatalmawaqi.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1256</value>
+  <data name="mawqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mawqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zirmowafiq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zirmowafiq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="halmoqtarah" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\halmoqtarah.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,14 +250,17 @@
   <data name="lightsoalwajawab" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightsoalwajawab.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="isdarjadid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\isdarjadid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="halmoqtarah02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\halmoqtarah02.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tahdithmoatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tahdithmoatal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="almayzat01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\almayzat01.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="isdarjadid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\isdarjadid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="qaimatfwtmyoutube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qaimatfwtmyoutube.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="lightiblagh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightiblagh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,8 +277,8 @@
   <data name="lighthajb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lighthajb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="adadannitaqat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adadannitaqat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="qaimatalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qaimatalmawaqi.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1256</value>
   </data>
   <data name="adadalmawaqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adadalmawaqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,19 +289,16 @@
   <data name="zir0moatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zir0moatal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="qaimatmani3ali3lanat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qaimatmani3ali3lanat.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="tahdithmoatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tahdithmoatal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightziralmayzat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightziralmayzat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="zir1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zir1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="qaimatfwtmyoutube" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qaimatfwtmyoutube.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="mawqi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mawqi.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tahaqoq" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tahaqoq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hawlaAlBarnamaj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hawlaAlBarnamaj.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

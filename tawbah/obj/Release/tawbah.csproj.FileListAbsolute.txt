@@ -38,6 +38,8 @@ C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Rele
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\Atawbah.exe
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\Atawbah.pdb
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\bin\Release\LinqBridge.dll
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.csproj.AssemblyReference.cache
+C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form00.resources
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form01.resources
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form02.resources
 C:\Users\toufi\source\repos\ToufikDevDz\Barnamaj Altawba\Atawbah\tawbah\obj\Release\tawbah.Form03.resources

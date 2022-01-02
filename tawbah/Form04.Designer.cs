@@ -266,7 +266,7 @@
             this.RightToLeftLayout = true;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "المزيد من الميزات";
+            this.Text = "المزيد من الميزات (اختيارية)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form04_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form4_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.khalfiyaalmayzat1)).EndInit();

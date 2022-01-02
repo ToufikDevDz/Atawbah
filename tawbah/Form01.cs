@@ -80,21 +80,28 @@ namespace tawbah
             }
             catch { }
 
+            //إظهار نافذة التنبيهاب عند تشغيل البرنامج أول مرة
+            if (Properties.Settings.Default.idhharNafidhatAlTanbihat == true)
+            {
+                Form hawlaform = new Form00();
+                hawlaform.ShowDialog();
+            }
+
             //تهاني
             //العيد
             var akhbar = Akhbar.Text;
-            if (akhbar.Contains("عيدك") | akhbar.Contains("تقبل الله"))
-            {
-                tahnia.BackgroundImage = Properties.Resources.al3id;
-                tahnia.Visible = true;
-            }
+                if (akhbar.Contains("عيدك") | akhbar.Contains("تقبل الله"))
+                {
+                    tahnia.BackgroundImage = Properties.Resources.al3id;
+                    tahnia.Visible = true;
+                }
 
-            //رمضان
-            if (akhbar.Contains("رمضان"))
-            {
-                tahnia.BackgroundImage = Properties.Resources.ramadan;
-                tahnia.Visible = true;
-            }
+                //رمضان
+                if (akhbar.Contains("رمضان"))
+                {
+                    tahnia.BackgroundImage = Properties.Resources.ramadan;
+                    tahnia.Visible = true;
+                }
 
             //Alt+F4 من الأوامر الخاصة بتعطيل 
             this.KeyPreview = true;
@@ -529,12 +536,12 @@ namespace tawbah
                 }
             }
 
-    //Ctrl + B حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية بالضغط على الأزرار
+            //Ctrl + B حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية وإزالة برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب من قائمة البرامج التي يتم تشغيلها عند بدأ تشغيل الويندوز وذلك بالضغط على الأزرار
             if (e.Control && e.KeyCode == Keys.B)
             {
                 if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
                 {
-                    var debug1 = MessageBox.Show("هل تريد إستعادة الملف hosts إلى حالته الأصليّة؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+                    var debug1 = MessageBox.Show("هل تريد إلغاء التغييرات؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
 
                     if (debug1 == DialogResult.Yes)
                     {
@@ -706,7 +713,7 @@ namespace tawbah
             tammaawla.Text = "0";
 
             //إظهار رسالة تم
-            MessageBox.Show("تمّت إستعادة الملف hosts إلى حالته الأصلية وإلغاء تفعيل برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            MessageBox.Show("تم إلغاء التغييرات.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
         }
 
     //عملية إلغاء حجب بعض محرّكات البحث التي لم يتمكن البرنامج من فرض ميزة البحث الآمن لها
@@ -1062,6 +1069,10 @@ namespace tawbah
 //تجريب الأوامر
         private void button1_Click(object sender, EventArgs e)
         {
+            //فتح نافذة
+            Form hawlaform = new Form05();
+            hawlaform.ShowDialog();
+
             //CMD تجريب أوامر
             //System.Diagnostics.Process process = new System.Diagnostics.Process();
             //System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();

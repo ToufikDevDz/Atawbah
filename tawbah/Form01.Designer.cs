@@ -160,11 +160,11 @@
             this.Assemby.AutoSize = true;
             this.Assemby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Assemby.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.Assemby.Location = new System.Drawing.Point(166, 27);
+            this.Assemby.Location = new System.Drawing.Point(153, 27);
             this.Assemby.Name = "Assemby";
-            this.Assemby.Size = new System.Drawing.Size(281, 13);
+            this.Assemby.Size = new System.Drawing.Size(303, 13);
             this.Assemby.TabIndex = 14;
-            this.Assemby.Text = "لا تنسى تغيير إصدار البرنامج في معلومات assembly";
+            this.Assemby.Text = "لا تنسى تغيير رقم إصدار البرنامج في معلومات assembly";
             this.Assemby.Visible = false;
             // 
             // raqmalisdarmawqi
@@ -288,7 +288,7 @@
             this.zirmayzat.Size = new System.Drawing.Size(30, 30);
             this.zirmayzat.TabIndex = 29;
             this.zirmayzat.TabStop = false;
-            this.toolTip1.SetToolTip(this.zirmayzat, "المزيد من الميزات");
+            this.toolTip1.SetToolTip(this.zirmayzat, "المزيد من الميزات (اختيارية)");
             this.zirmayzat.Click += new System.EventHandler(this.zirmayzat_Click);
             this.zirmayzat.MouseEnter += new System.EventHandler(this.zirmayzat_MouseEnter);
             this.zirmayzat.MouseLeave += new System.EventHandler(this.zirmayzat_MouseLeave);

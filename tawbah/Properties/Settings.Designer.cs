@@ -26,12 +26,24 @@ namespace tawbah.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool dhohorRisalatI3adatTachghilMani3AlI3lanat {
+        public bool idhharRisalatI3adatTachghilMani3AlI3lanat {
             get {
-                return ((bool)(this["dhohorRisalatI3adatTachghilMani3AlI3lanat"]));
+                return ((bool)(this["idhharRisalatI3adatTachghilMani3AlI3lanat"]));
             }
             set {
-                this["dhohorRisalatI3adatTachghilMani3AlI3lanat"] = value;
+                this["idhharRisalatI3adatTachghilMani3AlI3lanat"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool idhharNafidhatAlTanbihat {
+            get {
+                return ((bool)(this["idhharNafidhatAlTanbihat"]));
+            }
+            set {
+                this["idhharNafidhatAlTanbihat"] = value;
             }
         }
     }

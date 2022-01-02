@@ -2,7 +2,10 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="tawbah.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="dhohorRisalatI3adatTachghilMani3AlI3lanat" Type="System.Boolean" Scope="User">
+    <Setting Name="idhharRisalatI3adatTachghilMani3AlI3lanat" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="idhharNafidhatAlTanbihat" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
