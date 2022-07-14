@@ -374,7 +374,7 @@ namespace tawbah
             else
             {
                 //التنفيذ
-                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy)
                 {
                     intidhar();
                     backgroundWorker1.RunWorkerAsync();
@@ -404,7 +404,6 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //(حذف >بعض< الأسطر التي أضافها البرنامج إلى الملف (لا يحذف الأسطر الخاصة بمانع الإعلانات مثلا
@@ -450,8 +449,8 @@ namespace tawbah
                     sw.Write(Properties.Resources.qaimatalmawaqi);
                 } //" م6 بتصرف
 
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                //تنشيط السمة للقراءة فقط وإخفاء الملف
+                File.SetAttributes(pathhosts, FileAttributes.Hidden | FileAttributes.ReadOnly);
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();
@@ -522,7 +521,7 @@ namespace tawbah
     //أثناء العمليات Alt+f4 تعطيل
             if (e.Alt && e.KeyCode == Keys.F4)
             {
-                if (backgroundWorker1.IsBusy | backgroundWorker2.IsBusy | backgroundWorker3.IsBusy | backgroundWorker4.IsBusy | backgroundWorker5.IsBusy)
+                if (backgroundWorker1.IsBusy | backgroundWorker2.IsBusy)
                 {
                     //تعطيل
                     e.Handled = true;
@@ -536,10 +535,10 @@ namespace tawbah
                 }
             }
 
-            //Ctrl + B حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية وإزالة برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب من قائمة البرامج التي يتم تشغيلها عند بدأ تشغيل الويندوز وذلك بالضغط على الأزرار
+    //Ctrl + B حدث خطأ؟ يمكن استعادة الملف إلى حالته الأصلية وإزالة برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب من قائمة البرامج التي يتم تشغيلها عند بدأ تشغيل الويندوز وذلك بالضغط على الأزرار
             if (e.Control && e.KeyCode == Keys.B)
             {
-                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
+                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy)
                 {
                     var debug1 = MessageBox.Show("هل تريد إلغاء التغييرات؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
 
@@ -547,67 +546,6 @@ namespace tawbah
                     {
                         intidhar();
                         backgroundWorker2.RunWorkerAsync();
-                    }
-                }
-
-                else
-                {
-                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                }
-            }
-
-    //Ctrl + K حدث خطأ؟ يمكن إلغاء حجب بعض محرّكات البحث (التي لم يتمكن البرنامج من فرض ميزة الوضع الآمن لها) (مثل ياهو ويندكس...) بالضغط على الأزرار
-            if (e.Control && e.KeyCode == Keys.K)
-            {
-                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
-                {
-                    var debug2 = MessageBox.Show("هل تريد إلغاء حجب بعض محرّكات البحث؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-
-                    if (debug2 == DialogResult.Yes)
-                    {
-                        intidhar();
-                        backgroundWorker3.RunWorkerAsync();
-                    }
-                }
-
-                else
-                {
-                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                }
-            }
-
-
-    //Ctrl + G إلغاء فرض ميزة البحث الآمن لمحركات البحث جوجل وبنج بالضغط على الأزرار
-            if (e.Control && e.KeyCode == Keys.G)
-            {
-                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
-                {
-                    var debug3 = MessageBox.Show("هل تريد إلغاء فرض ميزة البحث الآمن لمحركات البحث Google وBing؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-
-                    if (debug3 == DialogResult.Yes)
-                    {
-                        intidhar();
-                        backgroundWorker4.RunWorkerAsync();
-                    }
-                }
-
-                else
-                {
-                    MessageBox.Show("انتظر حتّى تكتمل العمليّة الأخرى ثم أعد المحاولة، بارك الله فيك.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-                }
-            }
-			
-    //Ctrl + E إلغاء تفعيل برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب
-            if (e.Control && e.KeyCode == Keys.E)
-            {
-                if (!backgroundWorker1.IsBusy && !backgroundWorker2.IsBusy && !backgroundWorker3.IsBusy && !backgroundWorker4.IsBusy && !backgroundWorker5.IsBusy)
-                {
-                    var debug4 = MessageBox.Show("هل تريد إلغاء تفعيل برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب؟", "رسالة", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-
-                    if (debug4 == DialogResult.Yes)
-                    {
-                        intidhar();
-                        backgroundWorker5.RunWorkerAsync();
                     }
                 }
 
@@ -641,7 +579,7 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
+                //من بينها سمة إخفاء الملف
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //حذف المواقع التي أضافها البرنامج إلى الملف
@@ -654,7 +592,7 @@ namespace tawbah
                 File.WriteAllText(pathhosts, string.Join(Environment.NewLine, lines)); //" م7 بتصرف
 
                 //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                File.SetAttributes(pathhosts, FileAttributes.ReadOnly);
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();
@@ -715,213 +653,7 @@ namespace tawbah
             //إظهار رسالة تم
             MessageBox.Show("تم إلغاء التغييرات.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
         }
-
-    //عملية إلغاء حجب بعض محرّكات البحث التي لم يتمكن البرنامج من فرض ميزة البحث الآمن لها
-        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                //hosts التحقق من وجود الملف
-                if (!File.Exists(pathhosts))
-                {
-                    //إنشاء الملف إذا كان غير موجودا
-                    //"
-                    using (File.Create(pathhosts)) { } //" م4 بتصرف
-                    goto start3amaliya;
-                }
-
-            start3amaliya:
-                //Dnscache إيقاف وإلغاء تفعيل
-                iqafdnscache();
-
-                //الانتظار ثانيتين
-                Thread.Sleep(2000);
-
-                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
-                File.SetAttributes(pathhosts, FileAttributes.Normal);
-
-                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
-                //twbhmhrk حذف الأسطر التي تحتوي على كلمة
-                //"
-                var lines = File.ReadAllLines(pathhosts)
-                                .Where(line => !line.Contains("twbhmhrk")).ToArray();
-
-                File.WriteAllText(pathhosts, string.Join(Environment.NewLine, lines)); //" م7 بتصرف
-
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
-
-                //Dnscache تفعيل وتشغيل
-                tachghildnscache();
-
-                //Flush DNS
-                flush();
-            }
-
-            catch (Exception ex)
-            {
-                if (ex is UnauthorizedAccessException)
-                {
-                    //hosts إذا حدث خطأ رفض الوصول إلى ملف
-                    khataa01();
-                    return;
-                }
-                if (ex is IOException)
-                {
-                    //إذا حدث خطأ: لا يمكن للعملية الوصول إلى الملف هوستس لأنه قيد الاستخدام بواسطة عملية أخرى 
-                    khataa02();
-                    return;
-                }
-                else
-                {
-                    //إذا حدث خطأ من نوع آخر، تتوقف العملية وتظهر رسالة الخطأ           
-                    khataafitanfid();
-                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1);
-                    return;
-                }
-            }
-            //async إيقاف
-            backgroundWorker3.CancelAsync();
-
-            //إنتظار 15 ثواني
-            Thread.Sleep(15000);
-
-            //بعد إنتهاء العملية
-            intihaa();
-
-            //يمكن حجب المواقع مرة أخرى
-            tammaawla.Text = "0";
-
-            //إظهار رسالة تم
-            MessageBox.Show("تمّ إلغاء حجب محرّكات البحث.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-        }
-
-    //عملية إلغاء فرض ميزة البحث الآمن لمحركات البحث جوجل وبنج
-        private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                //hosts التحقق من وجود الملف
-                if (!File.Exists(pathhosts))
-                {
-                    //إنشاء الملف إذا كان غير موجودا
-                    //"
-                    using (File.Create(pathhosts)) { } //" م4 بتصرف
-                    goto start3amaliya;
-                }
-
-            start3amaliya:
-                //Dnscache إيقاف وإلغاء تفعيل
-                iqafdnscache();
-
-                //الانتظار ثانيتين
-                Thread.Sleep(2000);
-
-                //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
-                File.SetAttributes(pathhosts, FileAttributes.Normal);
-
-                //hosts حذف المواقع التي أضافها البرنامج إلى الملف
-                //twbhamn حذف الأسطر التي تحتوي على كلمة
-                //"
-                var lines = File.ReadAllLines(pathhosts)
-                                .Where(line => !line.Contains("twbhamn")).ToArray();
-
-                File.WriteAllText(pathhosts, string.Join(Environment.NewLine, lines)); //" م7 بتصرف
-
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
-
-                //Dnscache تفعيل وتشغيل
-                tachghildnscache();
-
-                //Flush DNS
-                flush();
-            }
-
-            catch (Exception ex)
-            {
-                if (ex is UnauthorizedAccessException)
-                {
-                    //hosts إذا حدث خطأ رفض الوصول إلى ملف
-                    khataa01();
-                    return;
-                }
-                if (ex is IOException)
-                {
-                    //إذا حدث خطأ: لا يمكن للعملية الوصول إلى الملف هوستس لأنه قيد الاستخدام بواسطة عملية أخرى 
-                    khataa02();
-                    return;
-                }
-                else
-                {
-                    //إذا حدث خطأ من نوع آخر، تتوقف العملية وتظهر رسالة الخطأ           
-                    khataafitanfid();
-                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1);
-                    return;
-                }
-            }
-            //async إيقاف
-            backgroundWorker4.CancelAsync();
-
-            //إنتظار 15 ثواني
-            Thread.Sleep(15000);
-
-            //بعد إنتهاء العملية
-            intihaa();
-
-            //يمكن حجب المواقع مرة أخرى
-            tammaawla.Text = "0";
-
-            //إظهار رسالة تم
-            MessageBox.Show("تمّ إلغاء فرض ميزة البحث الآمن لمحرّكات البحث Google وBing.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-        }
-
-    //عملية إلغاء تفعيل برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب
-        private void backgroundWorker5_DoWork(object sender, DoWorkEventArgs e)
-        {
-            try
-            {
-                //إزالة برنامج إيقاف تشغيل المتصفحات التي لا تدعم الحجب من قائمة البرامج التي يتم تشغيلها عند بدأ تشغيل ويندوز 
-                izalatMBBT();
-
-                //إيقافه
-                iqafMBBT();
-            }
-
-            catch (Exception ex)
-            {
-                if (ex is ArgumentException)
-                {
-                    /*إذا كانت القيمة (في أوامر إزالة برنامج إيقاف تشغيل المتصفحات) غير موجودة في سجل النظام
-                    لا يظهر الخطأ، لأنها قد تكون محذوفة بواسطة المستخدم أو لم يتم إضافتها أصلا */
-                }
-                else
-                {
-                    //إذا حدث خطأ من نوع آخر، تتوقف العملية وتظهر رسالة الخطأ           
-                    khataafitanfid();
-                    MessageBox.Show(ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1);
-                    return;
-                }
-            }
-
-            //async إيقاف
-            backgroundWorker5.CancelAsync();
-
-            //إنتظار 15 ثواني
-            Thread.Sleep(15000);
-
-            //بعد إنتهاء العملية
-            intihaa();
-
-            //يمكن حجب المواقع مرة أخرى
-            tammaawla.Text = "0";
-
-            //إظهار رسالة تم
-            MessageBox.Show("تمّ إلغاء تفعيل برنامج إيقاف تشغيل المتصفّحات التي لا تدعم الحجب.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
-        }
-
+    
     //ما يحدث بعد الضغط على الأزرار الأخرى
     //زر التحقق من وجود إصدار جديد
         private void tahdith_Click(object sender, EventArgs e)
@@ -1070,7 +802,7 @@ namespace tawbah
         private void button1_Click(object sender, EventArgs e)
         {
             //فتح نافذة
-            Form hawlaform = new Form05();
+            Form hawlaform = new Form02();
             hawlaform.ShowDialog();
 
             //CMD تجريب أوامر

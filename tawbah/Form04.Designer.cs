@@ -177,7 +177,7 @@
             this.adadAlNitaqatMI3lanat.BackgroundImage = global::tawbah.Properties.Resources.adadannitaqat;
             this.adadAlNitaqatMI3lanat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.adadAlNitaqatMI3lanat.Cursor = System.Windows.Forms.Cursors.Default;
-            this.adadAlNitaqatMI3lanat.Location = new System.Drawing.Point(51, 318);
+            this.adadAlNitaqatMI3lanat.Location = new System.Drawing.Point(48, 318);
             this.adadAlNitaqatMI3lanat.Margin = new System.Windows.Forms.Padding(0);
             this.adadAlNitaqatMI3lanat.Name = "adadAlNitaqatMI3lanat";
             this.adadAlNitaqatMI3lanat.Size = new System.Drawing.Size(144, 22);

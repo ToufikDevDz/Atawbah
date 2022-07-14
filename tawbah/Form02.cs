@@ -69,6 +69,41 @@ namespace tawbah
         {
             tahaqoq.BackgroundImage = Properties.Resources.tahaqoqnajah;
         }
+
+        private void soarabittahaqoq_Click(object sender, EventArgs e)
+        {
+            //تأثير عند الضغط
+            soarabittahaqoq.BackgroundImage = Properties.Resources.rabittahaqoq;
+            soarabittahaqoq.Refresh();
+            Thread.Sleep(100);
+            soarabittahaqoq.BackgroundImage = Properties.Resources.lightrabittahaqoq;
+
+            //إظهار فقاعة تم نسخ الرابط
+            ToolTip tt = new ToolTip();
+            tt.Show("تم نسخ الرابط", soarabittahaqoq, 50, -20, 2000);
+
+            //نسخ الرابط
+            //استخدمنا هذه الأوامر حتى لا تظهر مشكلة 
+            //Current thread must be set to single thread apartment (STA) mode before OLE calls can be made.
+
+            //"
+            Thread thread = new Thread(() => Clipboard.SetText("https://lilhajb.blogspot.com/"));
+            thread.SetApartmentState(ApartmentState.STA); //Set the thread to STA
+            thread.Start();
+            thread.Join(); //Wait for the thread to end //" م2
+        }
+
+        private void soarabittahaqoq_MouseEnter(object sender, EventArgs e)
+        {
+           
+            soarabittahaqoq.BackgroundImage = Properties.Resources.lightrabittahaqoq;
+           
+        }
+
+        private void soarabittahaqoq_MouseLeave(object sender, EventArgs e)
+        {
+            soarabittahaqoq.BackgroundImage = Properties.Resources.rabittahaqoq;
+        }
     }
 }
 
@@ -77,3 +112,7 @@ namespace tawbah
 //المصدر م1
 //Henk Holterman, Stack Overflow, https://stackoverflow.com/a/1140277, 
 //CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/
+
+//المصدر م2
+//It'sNotALie., Stack Overflow, https://stackoverflow.com/a/17762059, 
+//CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/

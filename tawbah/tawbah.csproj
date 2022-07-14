@@ -269,6 +269,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aycona.ico" />
+    <None Include="Resources\lightrabittahaqoq.png" />
+    <None Include="Resources\rabittahaqoq.png" />
+    <None Include="Resources\almotasafihlayaftah.png" />
     <None Include="Resources\zirmowafiq1.png" />
     <None Include="Resources\zirmowafiq.png" />
     <None Include="Resources\lightzirmowafiq.png" />

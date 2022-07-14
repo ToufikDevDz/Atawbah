@@ -41,10 +41,10 @@ namespace tawbah
             this.altanbihat.BackColor = System.Drawing.Color.White;
             this.altanbihat.BackgroundImage = global::tawbah.Properties.Resources.tanbihat;
             this.altanbihat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.altanbihat.Location = new System.Drawing.Point(-25, -50);
+            this.altanbihat.Location = new System.Drawing.Point(-15, -35);
             this.altanbihat.Margin = new System.Windows.Forms.Padding(0);
             this.altanbihat.Name = "altanbihat";
-            this.altanbihat.Size = new System.Drawing.Size(540, 591);
+            this.altanbihat.Size = new System.Drawing.Size(548, 591);
             this.altanbihat.TabIndex = 6;
             this.altanbihat.TabStop = false;
             // 
@@ -54,7 +54,7 @@ namespace tawbah
             this.mowafiq.BackgroundImage = global::tawbah.Properties.Resources.zirmowafiq;
             this.mowafiq.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.mowafiq.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mowafiq.Location = new System.Drawing.Point(186, 386);
+            this.mowafiq.Location = new System.Drawing.Point(195, 394);
             this.mowafiq.Margin = new System.Windows.Forms.Padding(0);
             this.mowafiq.Name = "mowafiq";
             this.mowafiq.Size = new System.Drawing.Size(129, 49);
@@ -69,7 +69,7 @@ namespace tawbah
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(491, 454);
+            this.ClientSize = new System.Drawing.Size(518, 516);
             this.Controls.Add(this.mowafiq);
             this.Controls.Add(this.altanbihat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

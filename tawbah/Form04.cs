@@ -37,6 +37,12 @@ namespace tawbah
     //hosts موقع الملف 
         string pathhosts = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts");
 
+    //أوامر تنشيط السمة للقراءة فقط وإخفاء الملف
+        private void samatqiraafaqatwaikhfa()
+        {
+            File.SetAttributes(pathhosts, FileAttributes.Hidden | FileAttributes.ReadOnly);
+        }
+
     //أوامر تحديث حالة الأزرار
         private void tahdithform()
         {
@@ -409,7 +415,6 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //حذف المواقع التي أضافها البرنامج إلى الملف
@@ -446,8 +451,8 @@ namespace tawbah
                     sw.Write(Properties.Resources.qaimatfwtmyoutube);
                 } //" م5 بتصرف
 
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                //تنشيط السمة للقراءة فقط وإخفاء الملف
+                samatqiraafaqatwaikhfa();
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();
@@ -517,7 +522,6 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //hosts حذف المواقع التي أضافها البرنامج إلى الملف
@@ -530,8 +534,8 @@ namespace tawbah
 
                 File.WriteAllText(pathhosts, string.Join(Environment.NewLine, lines)); //" م4 بتصرف
 
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                //تنشيط السمة للقراءة فقط وإخفاء الملف
+                samatqiraafaqatwaikhfa();
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();
@@ -636,7 +640,6 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //حذف المواقع التي أضافها البرنامج إلى الملف
@@ -669,8 +672,8 @@ namespace tawbah
                     sw.Write(Properties.Resources.qaimatmani3ali3lanat);
                 } //" م5 بتصرف
 
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                //تنشيط السمة للقراءة فقط وإخفاء الملف
+                samatqiraafaqatwaikhfa();
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();
@@ -740,7 +743,6 @@ namespace tawbah
                 Thread.Sleep(2000);
 
                 //hosts إلغاء السمة للقراءة فقط والسمات الأخرى للملف
-                FileInfo hostsnfo = new FileInfo(pathhosts);
                 File.SetAttributes(pathhosts, FileAttributes.Normal);
 
                 //hosts حذف المواقع التي أضافها البرنامج إلى الملف
@@ -751,8 +753,8 @@ namespace tawbah
 
                 File.WriteAllText(pathhosts, string.Join(Environment.NewLine, lines)); //" م4 بتصرف
 
-                //تنشيط السمة للقراءة فقط
-                hostsnfo.IsReadOnly = true;
+                //تنشيط السمة للقراءة فقط وإخفاء الملف
+                samatqiraafaqatwaikhfa();
 
                 //Dnscache تفعيل وتشغيل
                 tachghildnscache();

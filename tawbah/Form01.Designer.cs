@@ -51,13 +51,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.zirmayzat = new System.Windows.Forms.PictureBox();
             this.timerRisalaKhataa = new System.Windows.Forms.Timer(this.components);
-            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.itaralakhbar = new System.Windows.Forms.PictureBox();
             this.tahnia = new System.Windows.Forms.PictureBox();
             this.zirhajb = new System.Windows.Forms.PictureBox();
             this.fwqzirhajb = new System.Windows.Forms.PictureBox();
-            this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
             this.timerRisalaKhataa01 = new System.Windows.Forms.Timer(this.components);
             this.timerRisalaKhataa02 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
@@ -160,11 +157,11 @@
             this.Assemby.AutoSize = true;
             this.Assemby.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Assemby.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.Assemby.Location = new System.Drawing.Point(153, 27);
+            this.Assemby.Location = new System.Drawing.Point(159, 27);
             this.Assemby.Name = "Assemby";
-            this.Assemby.Size = new System.Drawing.Size(303, 13);
+            this.Assemby.Size = new System.Drawing.Size(294, 13);
             this.Assemby.TabIndex = 14;
-            this.Assemby.Text = "لا تنسى تغيير رقم إصدار البرنامج في معلومات assembly";
+            this.Assemby.Text = "لا تنس تغيير رقم إصدار البرنامج في معلومات assembly";
             this.Assemby.Visible = false;
             // 
             // raqmalisdarmawqi
@@ -184,7 +181,7 @@
             this.raqmalisdarfibarnamj.Name = "raqmalisdarfibarnamj";
             this.raqmalisdarfibarnamj.Size = new System.Drawing.Size(13, 13);
             this.raqmalisdarfibarnamj.TabIndex = 16;
-            this.raqmalisdarfibarnamj.Text = "8";
+            this.raqmalisdarfibarnamj.Text = "9";
             this.raqmalisdarfibarnamj.Visible = false;
             // 
             // label2
@@ -256,7 +253,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 26);
             this.label1.TabIndex = 23;
-            this.label1.Text = "لا تنسى تغيير brj\r\n(رقم إصدار البرنامج)";
+            this.label1.Text = "لا تنس تغيير brj\r\n(رقم إصدار البرنامج)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             // 
@@ -265,7 +262,7 @@
             this.tahdith.BackgroundImage = global::tawbah.Properties.Resources.tahdith;
             this.tahdith.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tahdith.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tahdith.Location = new System.Drawing.Point(317, 316);
+            this.tahdith.Location = new System.Drawing.Point(318, 317);
             this.tahdith.Margin = new System.Windows.Forms.Padding(0);
             this.tahdith.Name = "tahdith";
             this.tahdith.Size = new System.Drawing.Size(24, 24);
@@ -297,16 +294,6 @@
             // 
             this.timerRisalaKhataa.Interval = 1000;
             this.timerRisalaKhataa.Tick += new System.EventHandler(this.timerRisalaKhataa_Tick);
-            // 
-            // backgroundWorker3
-            // 
-            this.backgroundWorker3.WorkerSupportsCancellation = true;
-            this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
-            // 
-            // backgroundWorker4
-            // 
-            this.backgroundWorker4.WorkerSupportsCancellation = true;
-            this.backgroundWorker4.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker4_DoWork);
             // 
             // itaralakhbar
             // 
@@ -361,11 +348,6 @@
             this.fwqzirhajb.TabIndex = 33;
             this.fwqzirhajb.TabStop = false;
             this.fwqzirhajb.Visible = false;
-            // 
-            // backgroundWorker5
-            // 
-            this.backgroundWorker5.WorkerSupportsCancellation = true;
-            this.backgroundWorker5.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker5_DoWork);
             // 
             // timerRisalaKhataa01
             // 
@@ -465,14 +447,11 @@
         private System.Windows.Forms.PictureBox tahdith;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timerRisalaKhataa;
-        private System.ComponentModel.BackgroundWorker backgroundWorker3;
-        private System.ComponentModel.BackgroundWorker backgroundWorker4;
         private System.Windows.Forms.PictureBox itaralakhbar;
         private System.Windows.Forms.PictureBox zirmayzat;
         private System.Windows.Forms.PictureBox tahnia;
         private System.Windows.Forms.PictureBox zirhajb;
         private System.Windows.Forms.PictureBox fwqzirhajb;
-        private System.ComponentModel.BackgroundWorker backgroundWorker5;
         private System.Windows.Forms.Timer timerRisalaKhataa01;
         private System.Windows.Forms.Timer timerRisalaKhataa02;
         private System.Windows.Forms.Button button1;
