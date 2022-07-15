@@ -13,5 +13,5 @@ ff02::1 ip6-allnodes # twbhlclhst
 ff02::2 ip6-allrouters # twbhlclhst
 ff02::3 ip6-allhosts # twbhlclhst
 0.0.0.0 0.0.0.0 # twbhlclhst
-#youtube al wadh' al amin moderate la yojad ta'liqat # twbahfwtmy
-216.239.38.119 youtube.com www.youtube.com m.youtube.com youtube.googleapis.com youtubei.googleapis.com www.youtube-nocookie.com # twbahfwtmy
+#youtube al wadh' al amin strict la yojad ta'liqat # twbahfwtmy
+216.239.38.120 youtube.com www.youtube.com m.youtube.com youtube.googleapis.com youtubei.googleapis.com www.youtube-nocookie.com # twbahfwtmy
